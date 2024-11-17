@@ -39,7 +39,7 @@ namespace SwimmingSushi.Customs.ItemGroups
         {
             new Item.ItemProcess
             {
-                Process = GDOReferences.Cook,
+                Process = GDOReferences.Knead,
                 Duration = 2,
                 Result = GDOReferences.RolledSalmon
             }

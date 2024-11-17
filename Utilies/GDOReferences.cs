@@ -27,6 +27,7 @@ namespace SwimmingSushi.Utilies
         
         public static Process Cook => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook);
         public static Process Chop => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Chop);
+        public static Process Knead => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Knead);
         
         #endregion
 
@@ -36,6 +37,7 @@ namespace SwimmingSushi.Utilies
         public static Item Pot => (Item)GDOUtils.GetExistingGDO(ItemReferences.Pot);
         public static Item Rice => (Item)GDOUtils.GetExistingGDO(ItemReferences.Rice);
         public static Item Water => (Item)GDOUtils.GetExistingGDO(ItemReferences.Water);
+        public static Item Plate => (Item)GDOUtils.GetExistingGDO(ItemReferences.Plate);
         
         #endregion
         
@@ -60,8 +62,10 @@ namespace SwimmingSushi.Utilies
 
         #region Items
 
+        public static Item ChoppedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<ChoppedSalmonRoll>().GameDataObject;
         public static Item CookedRice => (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject;
         public static Item CookedRicePot => (Item)GDOUtils.GetCustomGameDataObject<CookedRicePot>().GameDataObject;
+        public static Item PortionedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedSalmonRoll>().GameDataObject;
         public static Item RolledSalmon => (Item)GDOUtils.GetCustomGameDataObject<RolledSalmon>().GameDataObject;
         public static Item Salmon => (Item)GDOUtils.GetCustomGameDataObject<Salmon>().GameDataObject;
         public static Item SalmonFillet => (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject;
