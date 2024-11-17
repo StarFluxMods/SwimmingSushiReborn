@@ -20,5 +20,7 @@ namespace SwimmingSushi.Customs.Items
                 Result = GDOReferences.SalmonFillet
             }
         };
+
+        public override Appliance DedicatedProvider => GDOReferences.SalmonProvider;
     }
 }
