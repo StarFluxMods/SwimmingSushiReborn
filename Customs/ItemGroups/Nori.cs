@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Appliances;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.ItemGroups
@@ -19,13 +18,14 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.SeaweedCooked),
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.SeaweedCooked)
+                    GDOReferences.SeaweedCooked,
+                    GDOReferences.SeaweedCooked
                 },
                 Min = 2,
                 Max = 2
             }
         };
-        public override Appliance DedicatedProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
+
+        public override Appliance DedicatedProvider => GDOReferences.NoriProvider;
     }
 }

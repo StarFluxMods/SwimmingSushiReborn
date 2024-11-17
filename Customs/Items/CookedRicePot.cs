@@ -3,8 +3,8 @@ using System.Reflection;
 using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.Items
@@ -16,9 +16,10 @@ namespace SwimmingSushi.Customs.Items
         public override int SplitCount => 3;
         public override List<Item> SplitDepletedItems => new List<Item>
         {
-            (Item)GDOUtils.GetExistingGDO(ItemReferences.Pot)
+            GDOReferences.Pot
         };
-        public override Item SplitSubItem => (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject;
+
+        public override Item SplitSubItem => GDOReferences.CookedRice;
 
         public override void OnRegister(Item gameDataObject)
         {

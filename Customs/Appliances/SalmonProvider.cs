@@ -1,20 +1,16 @@
-﻿using System.Collections.Generic;
-using KitchenData;
-using KitchenLib.Customs;
+﻿using KitchenData;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.ItemGroups;
-using SwimmingSushi.Customs.Items;
+using SwimmingSushi.Customs.Generic;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.Appliances
 {
-    public class SalmonProvider : CustomAppliance
+    public class SalmonProvider : GenericProvider
     {
+        public override string ProvidedItemName => "Salmon";
+        public override Item ProvidedItem => GDOReferences.Salmon;
         public override string UniqueNameID => "SalmonProvider";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlaceholderSalmonProvider").AssignMaterialsByNames();
-        public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
-        {
-            KitchenPropertiesUtils.GetUnlimitedCItemProvider(GDOUtils.GetCustomGameDataObject<Salmon>().ID)
-        };
     }
 }

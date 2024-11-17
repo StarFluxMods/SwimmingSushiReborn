@@ -2,11 +2,9 @@
 using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Items;
 using UnityEngine;
-using IngredientLib.Ingredient.Items;
+using SwimmingSushi.Utilies;
 
 namespace SwimmingSushi.Customs.ItemGroups
 {
@@ -20,7 +18,7 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<RiceSheet>().GameDataObject
+                    GDOReferences.RiceSheet
                 },
                 Min = 1,
                 Max = 1,
@@ -30,8 +28,8 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<ChoppedAvocado>().GameDataObject
+                    GDOReferences.SalmonFillet,
+                    GDOReferences.ChoppedAvocado
                 },
                 Min = 2,
                 Max = 2
@@ -41,32 +39,32 @@ namespace SwimmingSushi.Customs.ItemGroups
         {
             new Item.ItemProcess
             {
-                Process = (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook),
+                Process = GDOReferences.Cook,
                 Duration = 2,
-                Result = (Item)GDOUtils.GetCustomGameDataObject<RolledSalmon>().GameDataObject
+                Result = GDOReferences.RolledSalmon
             }
         };
         public override void OnRegister(ItemGroup gameDataObject)
         {
             base.OnRegister(gameDataObject);
 
-            if (gameDataObject.Prefab.TryGetComponent<ItemGroupView>(out ItemGroupView itemGroupView))
+            if (gameDataObject.Prefab.TryGetComponent(out ItemGroupView itemGroupView))
             {
                 itemGroupView.ComponentGroups = new List<ItemGroupView.ComponentGroup>
                 {
-                    new ItemGroupView.ComponentGroup
+                    new()
                     {
-                        Item = (Item)GDOUtils.GetCustomGameDataObject<RiceSheet>().GameDataObject,
+                        Item = GDOReferences.RiceSheet,
                         GameObject = gameDataObject.Prefab.GetChild("RiceSheet")
                     },
-                    new ItemGroupView.ComponentGroup
+                    new()
                     {
-                        Item = (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject,
+                        Item = GDOReferences.SalmonFillet,
                         GameObject = gameDataObject.Prefab.GetChild("PlaceholderSalmonFillet")
                     },
-                    new ItemGroupView.ComponentGroup
+                    new()
                     {
-                        Item = (Item)GDOUtils.GetCustomGameDataObject<ChoppedAvocado>().GameDataObject,
+                        Item = GDOReferences.ChoppedAvocado,
                         GameObject = gameDataObject.Prefab.GetChild("PlaceholderAvocadoSlices")
                     }
                 };

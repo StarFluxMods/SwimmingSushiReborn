@@ -1,6 +1,5 @@
 ﻿using KitchenLib.Customs;
 using KitchenLib.Utils;
-using Unity.Entities;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.Items

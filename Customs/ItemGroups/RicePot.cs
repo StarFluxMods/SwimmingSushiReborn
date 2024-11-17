@@ -2,9 +2,8 @@
 using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Items;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.ItemGroups
@@ -19,7 +18,7 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Pot),
+                    GDOReferences.Pot
                 },
                 Min = 1,
                 Max = 1,
@@ -29,8 +28,8 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Water),
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Rice),
+                    GDOReferences.Water,
+                    GDOReferences.Rice
                 },
                 Min = 2,
                 Max = 2
@@ -40,9 +39,9 @@ namespace SwimmingSushi.Customs.ItemGroups
         {
             new Item.ItemProcess
             {
-                Process = (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook),
+                Process = GDOReferences.Cook,
                 Duration = 2,
-                Result = (Item)GDOUtils.GetCustomGameDataObject<CookedRicePot>().GameDataObject
+                Result = GDOReferences.CookedRicePot
             }
         };
 
@@ -50,18 +49,18 @@ namespace SwimmingSushi.Customs.ItemGroups
         {
             base.OnRegister(gameDataObject);
 
-            if (gameDataObject.Prefab.TryGetComponent<ItemGroupView>(out ItemGroupView itemGroupView))
+            if (gameDataObject.Prefab.TryGetComponent(out ItemGroupView itemGroupView))
             {
                 itemGroupView.ComponentGroups = new List<ItemGroupView.ComponentGroup>
                 {
-                    new ItemGroupView.ComponentGroup
+                    new()
                     {
-                        Item = (Item)GDOUtils.GetExistingGDO(ItemReferences.Rice),
+                        Item = GDOReferences.Rice,
                         GameObject = gameDataObject.Prefab.GetChild("Rice")
                     },
-                    new ItemGroupView.ComponentGroup
+                    new()
                     {
-                        Item = (Item)GDOUtils.GetExistingGDO(ItemReferences.Water),
+                        Item = GDOReferences.Water,
                         GameObject = gameDataObject.Prefab.GetChild("Water")
                     }
                 };

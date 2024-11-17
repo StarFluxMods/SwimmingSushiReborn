@@ -1,0 +1,27 @@
+﻿using System.Collections.Generic;
+using KitchenData;
+using KitchenLib.Customs;
+using KitchenLib.Utils;
+
+namespace SwimmingSushi.Customs.Generic
+{
+    public abstract class GenericProvider : CustomAppliance
+    {
+        public abstract string ProvidedItemName { get; }
+        public abstract Item ProvidedItem { get; }
+        
+        public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
+        {
+            KitchenPropertiesUtils.GetUnlimitedCItemProvider(ProvidedItem.ID)
+        };
+        public override List<(Locale, ApplianceInfo)> InfoList => new List<(Locale, ApplianceInfo)>
+        {
+            (Locale.English, new ApplianceInfo
+            {
+                Name = ProvidedItemName,
+                Description = "Provides " + ProvidedItemName,
+                
+            })
+        };
+    }
+}

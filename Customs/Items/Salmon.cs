@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.Items
@@ -15,9 +15,9 @@ namespace SwimmingSushi.Customs.Items
         {
             new Item.ItemProcess
             {
-                Process = (Process)GDOUtils.GetExistingGDO(ProcessReferences.Chop),
+                Process = GDOReferences.Chop,
                 Duration = 1,
-                Result = (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject
+                Result = GDOReferences.SalmonFillet
             }
         };
     }

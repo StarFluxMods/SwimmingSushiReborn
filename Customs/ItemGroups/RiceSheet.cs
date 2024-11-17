@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
-using KitchenLib.References;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Items;
+using SwimmingSushi.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.ItemGroups
@@ -19,8 +18,8 @@ namespace SwimmingSushi.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<Nori>().GameDataObject,
+                    GDOReferences.CookedRice,
+                    GDOReferences.Nori
                 },
                 Min = 2,
                 Max = 2
