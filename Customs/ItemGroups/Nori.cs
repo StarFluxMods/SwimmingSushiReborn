@@ -3,6 +3,7 @@ using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.References;
 using KitchenLib.Utils;
+using SwimmingSushi.Customs.Appliances;
 using UnityEngine;
 
 namespace SwimmingSushi.Customs.ItemGroups
@@ -25,5 +26,6 @@ namespace SwimmingSushi.Customs.ItemGroups
                 Max = 2
             }
         };
+        public override Appliance DedicatedProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
     }
 }
