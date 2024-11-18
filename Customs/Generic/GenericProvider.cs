@@ -14,6 +14,10 @@ namespace SwimmingSushi.Customs.Generic
         {
             KitchenPropertiesUtils.GetUnlimitedCItemProvider(ProvidedItem.ID)
         };
+        public override bool SellOnlyAsDuplicate => true;
+        public override bool IsPurchasable => true;
+        public override PriceTier PriceTier => PriceTier.Medium;
+        public override ShoppingTags ShoppingTags => ShoppingTags.Cooking | ShoppingTags.Misc;
         public override List<(Locale, ApplianceInfo)> InfoList => new List<(Locale, ApplianceInfo)>
         {
             (Locale.English, new ApplianceInfo
