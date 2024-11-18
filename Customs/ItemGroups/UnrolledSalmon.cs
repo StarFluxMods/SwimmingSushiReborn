@@ -60,12 +60,12 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                     new()
                     {
                         Item = GDOReferences.SalmonFillet,
-                        GameObject = gameDataObject.Prefab.GetChild("PlaceholderSalmonFillet")
+                        GameObject = gameDataObject.Prefab.GetChild("SalmonFillet")
                     },
                     new()
                     {
                         Item = GDOReferences.ChoppedAvocado,
-                        GameObject = gameDataObject.Prefab.GetChild("PlaceholderAvocadoSlices")
+                        GameObject = gameDataObject.Prefab.GetChild("Avocado")
                     }
                 };
             }

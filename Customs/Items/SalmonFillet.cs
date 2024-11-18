@@ -7,7 +7,6 @@ namespace SwimmingSushiReborn.Customs.Items
     public class SalmonFillet : CustomItem
     {
         public override string UniqueNameID => "SalmonFillet";
-        public override GameObject Prefab =>
-            Mod.Bundle.LoadAsset<GameObject>("PlaceholderSalmonFillet").AssignMaterialsByNames();
+        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("SalmonFillet").AssignMaterialsByNames();
     }
 }
