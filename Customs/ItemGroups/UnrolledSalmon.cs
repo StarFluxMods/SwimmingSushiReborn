@@ -6,7 +6,7 @@ using KitchenLib.Utils;
 using UnityEngine;
 using SwimmingSushi.Utilies;
 
-namespace SwimmingSushi.Customs.ItemGroups
+namespace SwimmingSushiReborn.Customs.ItemGroups
 {
     public class UnrolledSalmon : CustomItemGroup
     {

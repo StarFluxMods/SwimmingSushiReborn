@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
 		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
-		<AssetBundlePath>UnityProject - SwimmingSushi\content\mod.assets</AssetBundlePath>
+		<AssetBundlePath>UnityProject - SwimmingSushiReborn\content\mod.assets</AssetBundlePath>
 		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
@@ -12,8 +12,8 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-	  <Compile Remove="UnityProject - SwimmingSushi\**" />
-	  <None Remove="UnityProject - SwimmingSushi\**" />
+	  <Compile Remove="UnityProject - SwimmingSushiReborn\**" />
+	  <None Remove="UnityProject - SwimmingSushiReborn\**" />
 	</ItemGroup>
 
 	<ItemGroup>

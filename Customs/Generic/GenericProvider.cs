@@ -3,7 +3,7 @@ using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
 
-namespace SwimmingSushi.Customs.Generic
+namespace SwimmingSushiReborn.Customs.Generic
 {
     public abstract class GenericProvider : CustomAppliance
     {

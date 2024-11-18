@@ -5,7 +5,7 @@ using KitchenLib.Utils;
 using SwimmingSushi.Utilies;
 using UnityEngine;
 
-namespace SwimmingSushi.Customs.Items
+namespace SwimmingSushiReborn.Customs.Items
 {
     public class Salmon : CustomItem
     {
@@ -20,7 +20,6 @@ namespace SwimmingSushi.Customs.Items
                 Result = GDOReferences.SalmonFillet
             }
         };
-
         public override Appliance DedicatedProvider => GDOReferences.SalmonProvider;
     }
 }

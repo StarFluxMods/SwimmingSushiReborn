@@ -3,7 +3,7 @@ using KitchenData;
 using KitchenLib.Customs;
 using SwimmingSushi.Utilies;
 
-namespace SwimmingSushi.Customs.Dishes
+namespace SwimmingSushiReborn.Customs.Dishes
 {
     public class DishSalmonRoll : CustomDish
     {

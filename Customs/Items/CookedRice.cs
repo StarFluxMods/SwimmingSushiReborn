@@ -2,7 +2,7 @@
 using KitchenLib.Utils;
 using UnityEngine;
 
-namespace SwimmingSushi.Customs.Items
+namespace SwimmingSushiReborn.Customs.Items
 {
     public class CookedRice : CustomItem
     {

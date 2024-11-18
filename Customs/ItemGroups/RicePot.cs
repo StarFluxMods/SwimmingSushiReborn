@@ -6,7 +6,7 @@ using KitchenLib.Utils;
 using SwimmingSushi.Utilies;
 using UnityEngine;
 
-namespace SwimmingSushi.Customs.ItemGroups
+namespace SwimmingSushiReborn.Customs.ItemGroups
 {
     public class RicePot : CustomItemGroup
     {

@@ -1,13 +1,13 @@
 using KitchenLib;
+using KitchenLib.Logging;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
 using System.Linq;
 using System.Reflection;
-using KitchenLib.Interfaces;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 
-namespace SwimmingSushi
+namespace SwimmingSushiReborn
 {
     public class Mod : BaseMod, IModSystem, IAutoRegisterAll
     {

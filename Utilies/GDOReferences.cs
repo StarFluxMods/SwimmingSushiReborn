@@ -6,7 +6,7 @@ using SwimmingSushi.Customs.Appliances;
 using SwimmingSushi.Customs.ItemGroups;
 using SwimmingSushi.Customs.Items;
 
-namespace SwimmingSushi.Utilies
+namespace SwimmingSushiReborn.Utilies
 {
     public static class GDOReferences
     {

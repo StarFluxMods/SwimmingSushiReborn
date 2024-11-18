@@ -3,7 +3,7 @@ using KitchenMods;
 using Unity.Collections;
 using Unity.Entities;
 
-namespace SwimmingSushi.Systems
+namespace SwimmingSushiReborn.Systems
 {
     public class UnlimitedMoney : NightSystem, IModSystem
     {

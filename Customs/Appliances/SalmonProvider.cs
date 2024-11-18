@@ -4,7 +4,7 @@ using SwimmingSushi.Customs.Generic;
 using SwimmingSushi.Utilies;
 using UnityEngine;
 
-namespace SwimmingSushi.Customs.Appliances
+namespace SwimmingSushiReborn.Customs.Appliances
 {
     public class SalmonProvider : GenericProvider
     {

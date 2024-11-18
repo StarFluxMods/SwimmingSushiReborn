@@ -3,7 +3,7 @@ using KitchenLib.Customs;
 using KitchenLib.Utils;
 using UnityEngine;
 
-namespace SwimmingSushi.Customs.Items
+namespace SwimmingSushiReborn.Customs.Items
 {
     public class PortionedSalmonRoll : CustomItem
     {
