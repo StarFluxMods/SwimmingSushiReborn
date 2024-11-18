@@ -33,5 +33,8 @@ namespace SwimmingSushi.Customs.ItemGroups
                 Max = 1
             }
         };
+
+        public override Item DisposesTo => GDOReferences.Plate;
+        public override Item DirtiesTo => GDOReferences.PlateDirty;
     }
 }
