@@ -1,18 +1,18 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 
 namespace SwimmingSushiReborn.Customs.Dishes
 {
-    public class DishSalmonRoll : CustomDish
-    {
-        public override string UniqueNameID => "DishSalmonRoll";
-        public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
-        public override CardType CardType => CardType.Default;
-        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
-        public override DishType Type => DishType.Base;
-        public override List<string> StartingNameSet => new() { };
+	public class DishSalmonRoll : CustomDish
+	{
+		public override string UniqueNameID => "DishSalmonRoll";
+		public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
+		public override CardType CardType => CardType.Default;
+		public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
+		public override DishType Type => DishType.Base;
+		public override List<string> StartingNameSet => new() { };
 		public override HashSet<Item> MinimumIngredients => new()
 		{
 			GDOReferences.Rice,
@@ -41,5 +41,5 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			}
 		};
 		public override bool IsAvailableAsLobbyOption => true;
-    }
+	}
 }

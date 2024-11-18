@@ -1,7 +1,7 @@
 ﻿using KitchenData;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Generic;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Customs.Generic;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Appliances

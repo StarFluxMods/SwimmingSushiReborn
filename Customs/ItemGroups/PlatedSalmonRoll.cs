@@ -2,7 +2,7 @@
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups
@@ -10,7 +10,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     public class PlatedSalmonRoll : CustomItemGroup
     {
         public override string UniqueNameID => "PlatedSalmonRoll";
-        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlaceHolderPlatedSalmonRoll").AssignMaterialsByNames();
+        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedSalmonRoll").AssignMaterialsByNames();
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet

@@ -4,7 +4,7 @@ using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Items
@@ -14,7 +14,7 @@ namespace SwimmingSushiReborn.Customs.Items
         public override string UniqueNameID => "CookedRicePot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("CookedRicePot").AssignMaterialsByNames();
         public override int SplitCount => 3;
-        public override List<Item> SplitDepletedItems => new List<Item>
+        public override List<Item> SplitDepletedItems => new()
         {
             GDOReferences.Pot
         };

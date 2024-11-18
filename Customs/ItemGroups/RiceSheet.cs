@@ -2,7 +2,7 @@
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups

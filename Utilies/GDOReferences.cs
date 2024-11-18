@@ -2,9 +2,9 @@
 using KitchenData;
 using KitchenLib.References;
 using KitchenLib.Utils;
-using SwimmingSushi.Customs.Appliances;
-using SwimmingSushi.Customs.ItemGroups;
-using SwimmingSushi.Customs.Items;
+using SwimmingSushiReborn.Customs.Appliances;
+using SwimmingSushiReborn.Customs.ItemGroups;
+using SwimmingSushiReborn.Customs.Items;
 
 namespace SwimmingSushiReborn.Utilies
 {

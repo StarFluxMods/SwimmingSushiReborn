@@ -3,7 +3,7 @@ using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups
@@ -35,7 +35,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 2
             }
         };
-        public override List<Item.ItemProcess> Processes => new List<Item.ItemProcess>
+        public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
             {

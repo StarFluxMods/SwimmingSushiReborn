@@ -10,7 +10,7 @@ namespace SwimmingSushiReborn.Customs.Generic
         public abstract string ProvidedItemName { get; }
         public abstract Item ProvidedItem { get; }
         
-        public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
+        public override List<IApplianceProperty> Properties => new()
         {
             KitchenPropertiesUtils.GetUnlimitedCItemProvider(ProvidedItem.ID)
         };
@@ -18,7 +18,7 @@ namespace SwimmingSushiReborn.Customs.Generic
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
         public override ShoppingTags ShoppingTags => ShoppingTags.Cooking | ShoppingTags.Misc;
-        public override List<(Locale, ApplianceInfo)> InfoList => new List<(Locale, ApplianceInfo)>
+        public override List<(Locale, ApplianceInfo)> InfoList => new()
         {
             (Locale.English, new ApplianceInfo
             {

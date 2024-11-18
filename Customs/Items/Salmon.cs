@@ -2,7 +2,7 @@
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
-using SwimmingSushi.Utilies;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Items
@@ -11,7 +11,7 @@ namespace SwimmingSushiReborn.Customs.Items
     {
         public override string UniqueNameID => "Salmon";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlaceholderSalmon").AssignMaterialsByNames();
-        public override List<Item.ItemProcess> Processes => new List<Item.ItemProcess>
+        public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
             {
