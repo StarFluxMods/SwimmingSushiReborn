@@ -4,6 +4,7 @@ using KitchenLib.Logging.Exceptions;
 using KitchenMods;
 using System.Linq;
 using System.Reflection;
+using KitchenLib.Interfaces;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 
