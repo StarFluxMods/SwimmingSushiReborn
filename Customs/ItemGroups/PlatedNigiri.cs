@@ -30,10 +30,9 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 {
                     GDOReferences.Nigiri,
                     GDOReferences.Nigiri,
-                    GDOReferences.Nigiri,
                 },
-                Min = 0,
-                Max = 3
+                Min = 1,
+                Max = 2,
             }
         };
 

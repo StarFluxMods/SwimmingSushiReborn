@@ -36,5 +36,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
                 DynamicMenuIngredient = null
             }
         };
+
+        public override bool IsAvailableAsLobbyOption => true;
     }
 }
