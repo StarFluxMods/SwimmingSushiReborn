@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8886343618977032071}
+  - component: {fileID: 2951486958046606400}
+  - component: {fileID: 2791475417730976129}
   m_Layer: 0
   m_Name: EmptyEski
   m_TagString: Untagged
@@ -31,6 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2951486958046606400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885418492056859601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.73}
+  m_Center: {x: 0, y: 0.48, z: 0}
+--- !u!208 &2791475417730976129
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885418492056859601}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.365}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.48, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &7266074502996792648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,7 +140,7 @@ PrefabInstance:
     - target: {fileID: -3739446007980515841, guid: 689dce1102c25ab48b48b91b810633da, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 4acc805b7f8728e428ccac25372b217d, type: 2}
+      objectReference: {fileID: 2100000, guid: 636c769c2f284f3418a6cc44fe694c7f, type: 2}
     - target: {fileID: -2859109400176981367, guid: 689dce1102c25ab48b48b91b810633da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -165,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 7418098771544918504, guid: 689dce1102c25ab48b48b91b810633da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4acc805b7f8728e428ccac25372b217d, type: 2}
+      objectReference: {fileID: 2100000, guid: 636c769c2f284f3418a6cc44fe694c7f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 689dce1102c25ab48b48b91b810633da, type: 3}
 --- !u!4 &7159862756741018275 stripped

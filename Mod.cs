@@ -4,7 +4,10 @@ using KitchenLib.Logging.Exceptions;
 using KitchenMods;
 using System.Linq;
 using System.Reflection;
+using KitchenData;
+using KitchenLib.Event;
 using KitchenLib.Interfaces;
+using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 
@@ -36,6 +39,35 @@ namespace SwimmingSushiReborn
         {
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault() ?? throw new MissingAssetBundleException(MOD_GUID);
             Logger = InitLogger();
+
+            Events.BuildGameDataEvent += (s, args) =>
+            {
+                SetupTwoWayProcesses(GDOReferences.Countertop, GDOReferences.RollingMat, new Appliance.ApplianceProcesses
+                {
+                    Process = GDOReferences.Roll,
+                    Speed = 0.75f,
+                    Validity = ProcessValidity.Generic,
+                });
+            };
+        }
+        
+        // Copies all processes from SourceAppliance to TargetAppliance, and adds an additional process to SourceAppliance
+        private void SetupTwoWayProcesses(Appliance sourceAppliance, Appliance targetAppliance, Appliance.ApplianceProcesses process)
+        {
+            foreach (Appliance.ApplianceProcesses sourceProcess in sourceAppliance.Processes)
+            {
+                if (!(targetAppliance.Processes.Any(applianceProcess =>
+                        applianceProcess.Process == sourceProcess.Process)))
+                {
+                    targetAppliance.Processes.Add(sourceProcess);
+                }
+            }
+
+            if (!(sourceAppliance.Processes.Any(applianceProcess =>
+                    applianceProcess.Process == process.Process)))
+            {
+                sourceAppliance.Processes.Add(process);
+            }
         }
     }
 }

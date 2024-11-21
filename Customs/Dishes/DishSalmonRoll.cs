@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
+using KitchenLib.Utils;
 using SwimmingSushiReborn.Utilies;
+using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Dishes
 {
@@ -28,7 +30,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			GDOReferences.Chop,
 			GDOReferences.Knead
 		};
-		// public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("Sushi_Icon").AssignMaterialsByNames();
+		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("PlaceholderSushiIcon").AssignMaterialsByNames();
 		public override List<Dish.MenuItem> ResultingMenuItems => new()
 		{
 			new Dish.MenuItem
@@ -41,5 +43,19 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			}
 		};
 		public override bool IsAvailableAsLobbyOption => true;
+		public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
+		{
+				(Locale.English,
+				new UnlockInfo
+				{
+					Name = "Salmon Roll",
+					FlavourText = "Do the salmon roll",
+				})
+		};
+
+		public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string>
+		{
+			{Locale.English, "Combine Rice and Water and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."}
+		};
 	}
 }

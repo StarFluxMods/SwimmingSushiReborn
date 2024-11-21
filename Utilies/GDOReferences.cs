@@ -5,6 +5,7 @@ using KitchenLib.Utils;
 using SwimmingSushiReborn.Customs.Appliances;
 using SwimmingSushiReborn.Customs.ItemGroups;
 using SwimmingSushiReborn.Customs.Items;
+using SwimmingSushiReborn.Customs.Processes;
 
 namespace SwimmingSushiReborn.Utilies
 {
@@ -43,6 +44,12 @@ namespace SwimmingSushiReborn.Utilies
         public static Item PlateDirty => (Item)GDOUtils.GetExistingGDO(ItemReferences.PlateDirty);
         
         #endregion
+
+        #region Appliances
+
+        public static Appliance Countertop => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Countertop);
+
+        #endregion
         
         #endregion
 
@@ -51,6 +58,7 @@ namespace SwimmingSushiReborn.Utilies
 
         public static Appliance NoriProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
         public static Appliance SalmonProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SalmonProvider>().GameDataObject;
+        public static Appliance RollingMat => (Appliance)GDOUtils.GetCustomGameDataObject<RollingMat>().GameDataObject;
 
         #endregion
         
@@ -61,6 +69,8 @@ namespace SwimmingSushiReborn.Utilies
         public static ItemGroup RiceSheet => (ItemGroup)GDOUtils.GetCustomGameDataObject<RiceSheet>().GameDataObject;
         public static ItemGroup UnrolledSalmon => (ItemGroup)GDOUtils.GetCustomGameDataObject<UnrolledSalmon>().GameDataObject;
         public static ItemGroup PlatedSalmonRoll => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSalmonRoll>().GameDataObject;
+        public static ItemGroup PlatedNigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedNigiri>().GameDataObject;
+        public static ItemGroup Nigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<Nigiri>().GameDataObject;
 
         #endregion
 
@@ -75,6 +85,12 @@ namespace SwimmingSushiReborn.Utilies
         public static Item SalmonFillet => (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject;
 
         #endregion
-        
+
+        #region Processes
+
+        public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
+
+        #endregion
+
     }
 }
