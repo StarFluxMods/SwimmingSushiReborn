@@ -54,17 +54,11 @@ namespace SwimmingSushiReborn
         // Copies all processes from SourceAppliance to TargetAppliance, and adds an additional process to SourceAppliance
         private void SetupTwoWayProcesses(Appliance sourceAppliance, Appliance targetAppliance, Appliance.ApplianceProcesses process)
         {
-            foreach (Appliance.ApplianceProcesses sourceProcess in sourceAppliance.Processes)
+            foreach (var sourceProcess in sourceAppliance.Processes.Where(sourceProcess => targetAppliance.Processes.All(applianceProcess => applianceProcess.Process != sourceProcess.Process)))
             {
-                if (!(targetAppliance.Processes.Any(applianceProcess =>
-                        applianceProcess.Process == sourceProcess.Process)))
-                {
-                    targetAppliance.Processes.Add(sourceProcess);
-                }
+                targetAppliance.Processes.Add(sourceProcess);
             }
-
-            if (!(sourceAppliance.Processes.Any(applianceProcess =>
-                    applianceProcess.Process == process.Process)))
+            if (sourceAppliance.Processes.All(applianceProcess => applianceProcess.Process != process.Process))
             {
                 sourceAppliance.Processes.Add(process);
             }
