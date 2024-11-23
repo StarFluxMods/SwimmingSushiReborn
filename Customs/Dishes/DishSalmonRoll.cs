@@ -14,7 +14,14 @@ namespace SwimmingSushiReborn.Customs.Dishes
 		public override CardType CardType => CardType.Default;
 		public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
 		public override DishType Type => DishType.Base;
-		public override List<string> StartingNameSet => new() { };
+		public override List<string> StartingNameSet => new()
+		{
+			"Roll With It",
+			"Rice Rice Baby",
+			"Salmon You Love Me",
+			"I Roll, You Roll",
+			"Salmon to Talk About"
+		};
 		public override HashSet<Item> MinimumIngredients => new()
 		{
 			GDOReferences.Rice,
@@ -30,7 +37,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			GDOReferences.Chop,
 			GDOReferences.Roll
 		};
-		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("PlaceholderSushiIcon").AssignMaterialsByNames();
+		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("SushiIcon").AssignMaterialsByNames();
 		public override List<Dish.MenuItem> ResultingMenuItems => new()
 		{
 			new Dish.MenuItem
@@ -49,7 +56,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 				new UnlockInfo
 				{
 					Name = "Salmon Roll",
-					FlavourText = "Do the salmon roll",
+					FlavourText = "Fish so fresh, even Poseidon would approve.",
 				})
 		};
 
