@@ -10,7 +10,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     public class Nigiri : CustomItemGroup
     {
         public override string UniqueNameID => "Nigiri";
-        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlaceholderNigiri").AssignMaterialsByNames();
+        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Nigiri").AssignMaterialsByNames();
         public override bool AutoCollapsing => true;
         public override List<ItemGroup.ItemSet> Sets => new()
         {

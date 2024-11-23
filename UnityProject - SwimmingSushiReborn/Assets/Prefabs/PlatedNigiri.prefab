@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452920400752767168, guid: e17dd26fe64748b47aa1be8069614530, type: 3}
       propertyPath: m_Name
-      value: PlaceholderNigiri (1)
+      value: Nigiri 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17dd26fe64748b47aa1be8069614530, type: 3}
@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452920400752767168, guid: e17dd26fe64748b47aa1be8069614530, type: 3}
       propertyPath: m_Name
-      value: PlaceholderNigiri (2)
+      value: Nigiri 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17dd26fe64748b47aa1be8069614530, type: 3}
@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452920400752767168, guid: e17dd26fe64748b47aa1be8069614530, type: 3}
       propertyPath: m_Name
-      value: PlaceholderNigiri
+      value: Nigiri 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17dd26fe64748b47aa1be8069614530, type: 3}

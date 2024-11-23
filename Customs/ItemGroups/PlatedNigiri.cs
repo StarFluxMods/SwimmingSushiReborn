@@ -52,9 +52,9 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                         Item = GDOReferences.Nigiri,
                         Objects = new List<GameObject>
                         {
-                            gameDataObject.Prefab.GetChild("PlaceholderNigiri"),
-                            gameDataObject.Prefab.GetChild("PlaceholderNigiri (1)"),
-                            gameDataObject.Prefab.GetChild("PlaceholderNigiri (2)"),
+                            gameDataObject.Prefab.GetChild("Nigiri 1"),
+                            gameDataObject.Prefab.GetChild("Nigiri 2"),
+                            gameDataObject.Prefab.GetChild("Nigiri 3")
                         }
                     }
                 };
