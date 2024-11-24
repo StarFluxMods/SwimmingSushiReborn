@@ -3,6 +3,7 @@ using KitchenData;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using SwimmingSushiReborn.Customs.Appliances;
+using SwimmingSushiReborn.Customs.Dishes;
 using SwimmingSushiReborn.Customs.ItemGroups;
 using SwimmingSushiReborn.Customs.Items;
 using SwimmingSushiReborn.Customs.Processes;
@@ -42,6 +43,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Item Water => (Item)GDOUtils.GetExistingGDO(ItemReferences.Water);
         public static Item Plate => (Item)GDOUtils.GetExistingGDO(ItemReferences.Plate);
         public static Item PlateDirty => (Item)GDOUtils.GetExistingGDO(ItemReferences.PlateDirty);
+        public static Item CondimentSoySauce => (Item)GDOUtils.GetExistingGDO(ItemReferences.CondimentSoySauce);
         
         #endregion
 
@@ -89,6 +91,12 @@ namespace SwimmingSushiReborn.Utilies
         #region Processes
 
         public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
+
+        #endregion
+
+        #region Dishes
+
+        public static Dish DishSalmonRoll => (Dish)GDOUtils.GetCustomGameDataObject<DishSalmonRoll>().GameDataObject;
 
         #endregion
 
