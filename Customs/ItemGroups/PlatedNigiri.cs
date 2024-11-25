@@ -3,12 +3,13 @@ using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
+using SwimmingSushiReborn.Customs.Generic;
 using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups
 {
-    public class PlatedNigiri : CustomItemGroup
+    public class PlatedNigiri : GenericPlatedDish
     {
         public override string UniqueNameID => "PlatedNigiri";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedNigiri").AssignMaterialsByNames();
@@ -35,9 +36,6 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 2,
             }
         };
-
-        public override Item DisposesTo => GDOReferences.Plate;
-        public override Item DirtiesTo => GDOReferences.PlateDirty;
 
         public override void OnRegister(ItemGroup gameDataObject)
         {
