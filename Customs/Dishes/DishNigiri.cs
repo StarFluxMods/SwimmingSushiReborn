@@ -12,7 +12,14 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override CardType CardType => CardType.Default;
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
-        public override List<string> StartingNameSet => new() { };
+        public override List<string> StartingNameSet => new()
+        {
+            "Nigiri Me Out",
+            "Rice to the Occasion",
+            "Slice, Slice Sushi",
+            "Oh Snap-per!",
+            "Hooked on Sushi"
+        };
         public override HashSet<Item> MinimumIngredients => new()
         {
             GDOReferences.Rice,
