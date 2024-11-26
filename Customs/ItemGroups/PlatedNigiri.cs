@@ -51,12 +51,12 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                         Objects = new List<GameObject>
                         {
                             gameDataObject.Prefab.GetChild("Nigiri 1"),
-                            gameDataObject.Prefab.GetChild("Nigiri 2"),
-                            gameDataObject.Prefab.GetChild("Nigiri 3")
+                            gameDataObject.Prefab.GetChild("Nigiri 2")
                         }
                     }
                 };
             }
         }
+        public override ItemValue ItemValue => ItemValue.Medium;
     }
 }

@@ -44,15 +44,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
         };
 
         public override bool IsAvailableAsLobbyOption => true;
-        
-        public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
-        {
-            (Locale.English,
-                new UnlockInfo
-                {
-                    Name = "Onigiri",
-                    FlavourText = "It’s hip to be triangular.",
-                })
-        };
+        public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.Onigiri;
+
+        public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.Onigiri;
     }
 }

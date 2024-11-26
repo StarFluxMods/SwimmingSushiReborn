@@ -46,14 +46,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
 
         public override bool IsAvailableAsLobbyOption => true;
         
-        public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
-        {
-            (Locale.English,
-                new UnlockInfo
-                {
-                    Name = "Nigiri",
-                    FlavourText = "Fish on top, rice below – it’s the sushi way to go!",
-                })
-        };
+        public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.Nigiri;
+
+        public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.Nigiri;
     }
 }

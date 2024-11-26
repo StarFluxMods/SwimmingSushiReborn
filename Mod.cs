@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using System.IO;
 using KitchenLib;
-using KitchenLib.Logging;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
 using System.Linq;
@@ -52,7 +49,7 @@ namespace SwimmingSushiReborn
                 });
             };
         }
-        
+
         // Copies all processes from SourceAppliance to TargetAppliance, and adds an additional process to SourceAppliance
         private void SetupTwoWayProcesses(Appliance sourceAppliance, Appliance targetAppliance, Appliance.ApplianceProcesses process)
         {

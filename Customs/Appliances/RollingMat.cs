@@ -34,15 +34,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
         public override ShoppingTags ShoppingTags => ShoppingTags.Cooking | ShoppingTags.Misc;
-        public override List<(Locale, ApplianceInfo)> InfoList => new()
-        {
-            (Locale.English, new ApplianceInfo
-            {
-                Name = "Rolling Mat",
-                Description = "Keep rolling em' out!",
-                
-            })
-        };
+        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.RollingMat;
 
         public override void OnRegister(Appliance gameDataObject)
         {

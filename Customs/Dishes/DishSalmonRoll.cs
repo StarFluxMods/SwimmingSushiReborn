@@ -50,19 +50,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			}
 		};
 		public override bool IsAvailableAsLobbyOption => true;
-		public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
-		{
-				(Locale.English,
-				new UnlockInfo
-				{
-					Name = "Salmon Roll",
-					FlavourText = "Fish so fresh, even Poseidon would approve.",
-				})
-		};
+		public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.SalmonRoll;
 
-		public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string>
-		{
-			{Locale.English, "Combine Rice and Water and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."}
-		};
+		public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.SalmonRoll;
 	}
 }

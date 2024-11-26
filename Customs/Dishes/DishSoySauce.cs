@@ -16,6 +16,16 @@ namespace SwimmingSushiReborn.Customs.Dishes
             {
                 Ingredient = GDOReferences.CondimentSoySauce,
                 MenuItem = GDOReferences.PlatedSalmonRoll
+            },
+            new Dish.IngredientUnlock
+            {
+                Ingredient = GDOReferences.CondimentSoySauce,
+                MenuItem = GDOReferences.PlatedNigiri
+            },
+            new Dish.IngredientUnlock
+            {
+                Ingredient = GDOReferences.CondimentSoySauce,
+                MenuItem = GDOReferences.PlatedOnigiri
             }
         };
 
@@ -31,19 +41,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.DishSalmonRoll
         };
-        public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
-        {
-            (Locale.English,
-                new UnlockInfo
-                {
-                    Name = "Soy Sauce",
-                    FlavourText = "A salty splash of perfection.",
-                })
-        };
+        public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.SoySauce;
 
-        public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string>
-        {
-            {Locale.English, "Customers may order Soy Sauce while eating."},
-        };
+        public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.SoySauce;
     }
 }

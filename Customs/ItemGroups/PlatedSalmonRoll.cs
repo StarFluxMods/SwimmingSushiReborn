@@ -33,5 +33,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 1
             }
         };
+
+        public override ItemValue ItemValue => ItemValue.Large;
     }
 }
