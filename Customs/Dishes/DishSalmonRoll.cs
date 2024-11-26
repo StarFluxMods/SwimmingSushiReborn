@@ -37,7 +37,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			GDOReferences.Chop,
 			GDOReferences.Roll
 		};
-		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("SushiIcon").AssignMaterialsByNames();
+		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("SalmonRollIcon").AssignMaterialsByNames();
 		public override List<Dish.MenuItem> ResultingMenuItems => new()
 		{
 			new Dish.MenuItem

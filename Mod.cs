@@ -22,6 +22,8 @@ namespace SwimmingSushiReborn
 
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
+        
+        internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = true;
 
         public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly()) { }
 

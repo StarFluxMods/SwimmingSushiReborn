@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
+using KitchenLib.Utils;
 using SwimmingSushiReborn.Utilies;
+using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Dishes
 {
@@ -32,6 +34,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
             GDOReferences.Cook,
             GDOReferences.Chop
         };
+        public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("NigiriIcon").AssignMaterialsByNames();
         public override List<Dish.MenuItem> ResultingMenuItems => new()
         {
             new Dish.MenuItem
@@ -44,7 +47,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
             }
         };
 
-        public override bool IsAvailableAsLobbyOption => true;
+        public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;
         
         public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.Nigiri;
 
