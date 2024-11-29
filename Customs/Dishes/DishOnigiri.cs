@@ -14,6 +14,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override CardType CardType => CardType.Default;
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
+        public override int Difficulty => 1;
         public override List<string> StartingNameSet => new()
         {
             "Tri Me!",
@@ -24,6 +25,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         };
         public override HashSet<Item> MinimumIngredients => new()
         {
+            GDOReferences.Plate,
             GDOReferences.Rice,
             GDOReferences.Pot,
             GDOReferences.Water,
@@ -44,6 +46,11 @@ namespace SwimmingSushiReborn.Customs.Dishes
                 DynamicMenuType = DynamicMenuType.Static,
                 DynamicMenuIngredient = null
             }
+        };
+
+        public override List<Unlock> HardcodedRequirements => new List<Unlock>
+        {
+            GDOReferences.DishSalmonRoll
         };
 
         public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;

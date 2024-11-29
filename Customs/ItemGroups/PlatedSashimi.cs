@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using Kitchen;
 using KitchenData;
+using KitchenLib.Customs;
 using KitchenLib.Utils;
 using SwimmingSushiReborn.Customs.Generic;
 using SwimmingSushiReborn.Utilies;
@@ -7,10 +9,10 @@ using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups
 {
-    public class PlatedSalmonRoll : GenericPlatedDish
+    public class PlatedSashimi : GenericPlatedDish
     {
-        public override string UniqueNameID => "PlatedSalmonRoll";
-        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedSalmonRoll").AssignMaterialsByNames();
+        public override string UniqueNameID => "PlatedSashimi";
+        public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedSashimi").AssignMaterialsByNames();
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -27,13 +29,12 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    GDOReferences.PortionedSalmonRoll,
+                    GDOReferences.Sashimi,
                 },
                 Min = 1,
-                Max = 1
+                Max = 1,
             }
         };
-
-        public override ItemValue ItemValue => ItemValue.Small;
+        public override ItemValue ItemValue => ItemValue.SideMedium;
     }
 }

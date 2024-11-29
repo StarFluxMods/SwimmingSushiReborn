@@ -14,6 +14,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
 		public override CardType CardType => CardType.Default;
 		public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
 		public override DishType Type => DishType.Base;
+		public override int Difficulty => 3;
+
 		public override List<string> StartingNameSet => new()
 		{
 			"Roll With It",
@@ -24,6 +26,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 		};
 		public override HashSet<Item> MinimumIngredients => new()
 		{
+			GDOReferences.Plate,
 			GDOReferences.Rice,
 			GDOReferences.Nori,
 			GDOReferences.Pot,

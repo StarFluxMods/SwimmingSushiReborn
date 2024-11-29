@@ -74,6 +74,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo{Name = "간장", FlavourText = "완벽함의 짭짤한 스플래시."}),
                 (Locale.Turkish, new UnlockInfo{Name = "Soya Sosu", FlavourText = "Mükemmelliğin tuzlu bir sıçraması."}),
             };
+            
+            public static List<(Locale, UnlockInfo)> Sashimi => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Sashimi", FlavourText = "So fresh, it practically swims."}),
+                (Locale.English, new UnlockInfo{Name = "Sashimi", FlavourText = "So fresh, it practically swims."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Sashimi", FlavourText = "Il est si frais qu'il nage pratiquement."}),
+                (Locale.German, new UnlockInfo{Name = "Sashimi", FlavourText = "So frisch, dass es praktisch schwimmt."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Sashimi", FlavourText = "Tan fresco que prácticamente nada."}),
+                (Locale.Polish, new UnlockInfo{Name = "Sashimi", FlavourText = "Tak świeży, że praktycznie pływa."}),
+                (Locale.Russian, new UnlockInfo{Name = "Сашими", FlavourText = "Он настолько свеж, что практически плавает."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Sashimi", FlavourText = "Tão fresco que praticamente nada."}),
+                (Locale.Japanese, new UnlockInfo{Name = "刺身", FlavourText = "とても新鮮で、まるで泳いでいるようだ。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "刺身", FlavourText = "如此新鲜，几乎可以游泳。"}),
+                (Locale.Korean, new UnlockInfo{Name = "사시미", FlavourText = "너무 신선해서 거의 헤엄칠 정도입니다."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Sashimi", FlavourText = "O kadar taze ki, neredeyse yüzüyor."}),
+            };
         }
 
         public static class Recipes
@@ -144,6 +161,23 @@ namespace SwimmingSushiReborn.Utilies
                 {Locale.ChineseSimplified, "顾客可在用餐时点酱油。"},
                 {Locale.Korean, "고객은 식사 중에 간장을 주문할 수 있습니다."},
                 {Locale.Turkish, "Müşteriler yemek yerken Soya Sosu sipariş edebilirler."},
+            };
+            
+            public static Dictionary<Locale, string> Sashimi => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Double Chop Salmon, Plate and Serve"},
+                {Locale.English, "Double Chop Salmon, Plate and Serve"},
+                {Locale.BlankText, ""},
+                {Locale.French, "Couper le saumon en deux, le mettre en assiette et le servir"},
+                {Locale.German, "Lachs doppelt hacken, plattieren und servieren"},
+                {Locale.Spanish, "Cortar el salmón en dos trozos, emplatar y servir"},
+                {Locale.Polish, "Podwójnie posiekaj łososia, nałóż na talerz i podawaj"},
+                {Locale.Russian, "Нарежьте лосося на две части, разложите по тарелкам и подавайте."},
+                {Locale.PortugueseBrazil, "Corte o salmão duas vezes, coloque no prato e sirva"},
+                {Locale.Japanese, "サーモンをダブルチョップし、皿に盛り付ける。"},
+                {Locale.ChineseSimplified, "将三文鱼切成两半，装盘上桌"},
+                {Locale.Korean, "연어를 두 번 자르고 접시에 담아 제공"},
+                {Locale.Turkish, "Somonu İkili Doğrayın, Tabaklayın ve Servis Edin"},
             };
         }
 
