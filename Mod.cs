@@ -6,6 +6,8 @@ using System.Reflection;
 using KitchenData;
 using KitchenLib.Event;
 using KitchenLib.Interfaces;
+using KitchenLib.References;
+using SwimmingSushiReborn.Patches;
 using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
@@ -30,6 +32,13 @@ namespace SwimmingSushiReborn
         protected override void OnInitialise()
         {
             Logger.LogWarning($"{MOD_GUID} v{MOD_VERSION} in use!");
+            ResolveStatusChangesPatch.x.Add(new CustomProcessResult
+            {
+                OriginalItemID = GDOReferences.Salmon.ID,
+                OriginalResultID = GDOReferences.SalmonFillet.ID,
+                HeldItemID = ItemReferences.SharpKnife,
+                NewResultID = ItemReferences.CrabChopped
+            });
         }
 
         protected override void OnUpdate()
