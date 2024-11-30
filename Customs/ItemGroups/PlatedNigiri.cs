@@ -36,6 +36,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 2,
             }
         };
+        public override ItemValue ItemValue => ItemValue.SideMedium;
 
         public override void OnRegister(ItemGroup gameDataObject)
         {
@@ -57,6 +58,5 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 };
             }
         }
-        public override ItemValue ItemValue => ItemValue.SideMedium;
     }
 }

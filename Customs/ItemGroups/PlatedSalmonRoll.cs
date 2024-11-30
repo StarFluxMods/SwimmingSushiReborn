@@ -34,6 +34,6 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
             }
         };
 
-        public override ItemValue ItemValue => ItemValue.Small;
+        public override ItemValue ItemValue => ItemValue.Medium;
     }
 }
