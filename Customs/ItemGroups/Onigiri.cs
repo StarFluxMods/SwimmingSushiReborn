@@ -18,7 +18,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    GDOReferences.CookedRice,
+                    GDOReferences.RiceBall,
                     GDOReferences.SeaweedCooked
                 },
                 Min = 2,

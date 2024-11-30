@@ -61,6 +61,8 @@ namespace SwimmingSushiReborn.Utilies
         public static Appliance NoriProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
         public static Appliance SalmonProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SalmonProvider>().GameDataObject;
         public static Appliance RollingMat => (Appliance)GDOUtils.GetCustomGameDataObject<RollingMat>().GameDataObject;
+        public static Appliance FishKnifeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<FishKnifeProvider>().GameDataObject;
+        public static Appliance RoeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<RoeProvider>().GameDataObject;
 
         #endregion
         
@@ -76,6 +78,8 @@ namespace SwimmingSushiReborn.Utilies
         public static ItemGroup Onigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<Onigiri>().GameDataObject;
         public static ItemGroup PlatedOnigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedOnigiri>().GameDataObject;
         public static ItemGroup PlatedSashimi => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSashimi>().GameDataObject;
+        public static ItemGroup Gunkan => (ItemGroup)GDOUtils.GetCustomGameDataObject<Gunkan>().GameDataObject;
+        public static ItemGroup PlatedGunkan => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedGunkan>().GameDataObject;
 
         #endregion
 
@@ -90,6 +94,9 @@ namespace SwimmingSushiReborn.Utilies
         public static Item SalmonFillet => (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject;
         public static Item Sashimi => (Item)GDOUtils.GetCustomGameDataObject<Sashimi>().GameDataObject;
         public static Item RiceBall => (Item)GDOUtils.GetCustomGameDataObject<RiceBall>().GameDataObject;
+        public static Item FishKnife => (Item)GDOUtils.GetCustomGameDataObject<FishKnife>().GameDataObject;
+        public static Item SalmonWithRoe => (Item)GDOUtils.GetCustomGameDataObject<SalmonWithRoe>().GameDataObject;
+        public static Item Roe => (Item)GDOUtils.GetCustomGameDataObject<Roe>().GameDataObject;
 
         #endregion
 

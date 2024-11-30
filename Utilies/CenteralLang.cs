@@ -91,59 +91,76 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo{Name = "사시미", FlavourText = "너무 신선해서 거의 헤엄칠 정도입니다."}),
                 (Locale.Turkish, new UnlockInfo{Name = "Sashimi", FlavourText = "O kadar taze ki, neredeyse yüzüyor."}),
             };
+            
+            public static List<(Locale, UnlockInfo)> Gunkan => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Gunkan", FlavourText = "The unsinkable flavor ship."}),
+                (Locale.English, new UnlockInfo{Name = "Gunkan", FlavourText = "The unsinkable flavor ship."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Gunkan", FlavourText = "Le navire insubmersible."}),
+                (Locale.German, new UnlockInfo{Name = "Gunkan", FlavourText = "Das unsinkbare Geschmacksschiff."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Gunkan", FlavourText = "El insumergible barco del sabor."}),
+                (Locale.Polish, new UnlockInfo{Name = "Gunkan", FlavourText = "Niezatapialny statek smakowy."}),
+                (Locale.Russian, new UnlockInfo{Name = "Gunkan", FlavourText = "Непотопляемый корабль с ароматом."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Gunkan", FlavourText = "O navio de sabor inafundável."}),
+                (Locale.Japanese, new UnlockInfo{Name = "軍艦", FlavourText = "不沈艦。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "文化馆", FlavourText = "永不沉没的风味船"}),
+                (Locale.Korean, new UnlockInfo{Name = "군칸", FlavourText = "가라앉지 않는 맛의 배."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Gunkan", FlavourText = "Batmayan lezzet gemisi."}),
+            };
         }
 
         public static class Recipes
         {
             public static Dictionary<Locale, string> SalmonRoll => new Dictionary<Locale, string>
             {
-                {Locale.Default, "Combine Rice and Water and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."},
-                {Locale.English, "Combine Rice and Water and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."},
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion onto a Nori sheet, and add chopped Salmon and Avocado, Roll, Chop, and Portion."},
                 {Locale.BlankText, ""},
-                {Locale.French, "Mélanger le riz et l'eau et faire cuire. Répartir sur une feuille Nori, ajouter du saumon et de l'avocat hachés, rouler, hacher et répartir."},
-                {Locale.German, "Reis und Wasser vermengen und kochen. Auf ein Nori-Blatt portionieren und gehackten Lachs und Avocado hinzufügen, rollen, hacken und portionieren."},
-                {Locale.Spanish, "Combine el Arroz y el Agua y Cocine. Porcionar en una hoja de Nori, y añadir Salmón y Aguacate picados, Enrollar, Picar y Porcionar."},
-                {Locale.Polish, "Połączyć ryż z wodą i ugotować. Przełożyć na arkusz nori, dodać pokrojonego łososia i awokado, zrolować, posiekać i przełożyć."},
-                {Locale.Russian, "Соедините рис с водой и приготовьте. Выложите порционно на лист нори, добавьте нарезанный лосось и авокадо, сверните, нарежьте и выложите порционно."},
-                {Locale.PortugueseBrazil, "Combine arroz e água e cozinhe. Distribua em uma folha de Nori e adicione salmão e abacate picados, enrole, corte e distribua."},
-                {Locale.Japanese, "米と水を混ぜて炊く。海苔に盛り、刻んだサーモンとアボカドを加え、巻いて刻んで盛り付ける。"},
-                {Locale.ChineseSimplified, "将米和水混合煮熟。分装在紫菜片上，加入切碎的三文鱼和牛油果，卷起，切碎，分装。"},
-                {Locale.Korean, "밥과 물을 섞어 조리합니다. 김 시트에 나누어 담고 다진 연어와 아보카도를 넣고 굴려서 잘게 자른 후 나누어 담습니다."},
-                {Locale.Turkish, "Pirinç ve Suyu Karıştırın ve Pişirin. Nori yaprağına paylaştırın ve doğranmış Somon ve Avokado ekleyin, Yuvarlayın, Doğrayın ve Paylaştırın."},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Répartir sur une feuille de nori, ajouter du saumon et de l'avocat hachés, rouler, hacher et répartir."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Auf ein Nori-Blatt portionieren und gehackten Lachs und Avocado hinzufügen, rollen, hacken und portionieren."},
+                {Locale.Spanish, "Combine el arroz y el agua en una olla y cocine. Porcionar en una hoja de Nori, y añadir Salmón picado y Aguacate, Enrollar, Picar, y Porcionar."},
+                {Locale.Polish, "Połącz ryż i wodę w garnku i ugotuj. Przełożyć na arkusz nori, dodać pokrojonego łososia i awokado, zrolować, posiekać i przełożyć."},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Выложите порционно на лист нори, добавьте нарезанный лосось и авокадо, сверните, нарежьте и выложите порционно."},
+                {Locale.PortugueseBrazil, "Combine arroz e água em uma panela e cozinhe. Distribua em uma folha de Nori e adicione salmão e abacate picados, enrole, corte e distribua."},
+                {Locale.Japanese, "鍋に米と水を入れて炊く。海苔の上に盛り付け、刻んだサーモンとアボカドを加え、巻いて刻んで盛り付ける。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。分装在紫菜片上，加入切碎的三文鱼和牛油果，卷起，切碎，分装。"},
+                {Locale.Korean, "냄비에 쌀과 물을 넣고 끓입니다. 김 시트에 나누어 담고 다진 연어와 아보카도를 넣고 굴려서 잘게 자른 후 나누어 담습니다."},
+                {Locale.Turkish, "Pirinç ve Suyu bir tencerede karıştırın ve pişirin. Nori yaprağına paylaştırın ve doğranmış Somon ve Avokado ekleyin, Yuvarlayın, Doğrayın ve Paylaştırın."},
             };
         
             public static Dictionary<Locale, string> Nigiri => new Dictionary<Locale, string>
             {
-                {Locale.Default, "Combine Rice and Water and Cook. Portion from pot, and combine with Chopped Salmon"},
-                {Locale.English, "Combine Rice and Water and Cook. Portion from pot, and combine with Chopped Salmon"},
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion and roll, and combine with Chopped Salmon"},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion and roll, and combine with Chopped Salmon"},
                 {Locale.BlankText, ""},
-                {Locale.French, "Mélanger le riz et l'eau et faire cuire. Retirer les portions de la casserole et les combiner avec le saumon haché."},
-                {Locale.German, "Reis und Wasser vermengen und kochen. Portion aus dem Topf nehmen und mit dem gehackten Lachs kombinieren"},
-                {Locale.Spanish, "Combine el Arroz y el Agua y Cocine. Sacar de la olla y mezclar con el salmón picado."},
-                {Locale.Polish, "Połączyć ryż z wodą i ugotować. Wyjąć z garnka i połączyć z posiekanym łososiem"},
-                {Locale.Russian, "Соедините рис с водой и варите. Выложите из кастрюли и соедините с нарезанным лососем."},
-                {Locale.PortugueseBrazil, "Combine o arroz e a água e cozinhe. Retire uma porção da panela e combine com o salmão picado"},
-                {Locale.Japanese, "米と水を混ぜて炊く。鍋から取り出し、刻んだサーモンと合わせる。"},
-                {Locale.ChineseSimplified, "将米和水混合煮熟。从锅中取出，与切碎的三文鱼混合"},
-                {Locale.Korean, "밥과 물을 섞어 조리합니다. 냄비에서 일부를 덜어낸 후 다진 연어와 섞어줍니다."},
-                {Locale.Turkish, "Pirinç ve Suyu Karıştırın ve Pişirin. Tencereden alın ve doğranmış somon balığı ile karıştırın"},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Portionner et rouler, et combiner avec le saumon haché."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Portionieren, rollen und mit dem gehackten Lachs kombinieren."},
+                {Locale.Spanish, "Combine el Arroz y el Agua en una Olla y Cocine. Porcionar y enrollar, y combinar con Salmón picado."},
+                {Locale.Polish, "Połączyć ryż i wodę w garnku i ugotować. Porcjować, zwijać i łączyć z posiekanym łososiem"},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Порционируйте, сверните в рулет и соедините с нарезанным лососем."},
+                {Locale.PortugueseBrazil, "Misture o arroz e a água em uma panela e cozinhe. Divida em porções, enrole e combine com o salmão picado"},
+                {Locale.Japanese, "米と水を鍋に入れて炊く。鮭のみじん切りと合わせる。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。分装、卷起，与切碎的三文鱼一起食用"},
+                {Locale.Korean, "냄비에 밥과 물을 넣고 조리합니다. 나누어 말아서 다진 연어와 섞어줍니다."},
+                {Locale.Turkish, "Pirinç ve suyu bir tencerede karıştırın ve pişirin. Porsiyonlayın, yuvarlayın ve Doğranmış Somon ile birleştirin"},
             };
             
             public static Dictionary<Locale, string> Onigiri => new Dictionary<Locale, string>
             {
-                {Locale.Default, "Combine Rice and Water and Cook. Portion from pot, and combine with Cooked Seaweed"},
-                {Locale.English, "Combine Rice and Water and Cook. Portion from pot, and combine with Cooked Seaweed"},
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion, Roll into ball, and combine with Cooked Seaweed"},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion, Roll into ball, and combine with Cooked Seaweed"},
                 {Locale.BlankText, ""},
-                {Locale.French, "Mélanger le riz et l'eau et faire cuire. Retirer les portions de la casserole et les combiner avec les algues cuites."},
-                {Locale.German, "Reis und Wasser vermengen und kochen. Aus dem Topf nehmen und mit gekochtem Seetang kombinieren."},
-                {Locale.Spanish, "Mezclar el arroz y el agua y cocer. Porción de la olla, y se combinan con algas cocidas"},
-                {Locale.Polish, "Połączyć ryż z wodą i ugotować. Wyjąć z garnka i połączyć z ugotowanymi wodorostami."},
-                {Locale.Russian, "Соедините рис с водой и варите. Выложите из кастрюли и соедините с приготовленными морскими водорослями."},
-                {Locale.PortugueseBrazil, "Combine o arroz e a água e cozinhe. Retire uma porção da panela e combine com as algas cozidas"},
-                {Locale.Japanese, "米と水を混ぜて炊く。鍋から取り出し、茹でたわかめと合わせる。"},
-                {Locale.ChineseSimplified, "将米和水混合煮熟。从锅中取出，与煮熟的海藻混合"},
-                {Locale.Korean, "밥과 물을 섞어 조리합니다. 냄비에서 일부를 덜어 익힌 해초와 섞어줍니다."},
-                {Locale.Turkish, "Pirinç ve Suyu Karıştırın ve Pişirin. Tencereden alın ve Pişmiş Deniz Yosunu ile birleştirin"},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Portionner, rouler en boule et combiner avec les algues cuites."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Portionieren, zu einer Kugel rollen und mit gekochtem Seetang kombinieren."},
+                {Locale.Spanish, "Mezclar el arroz y el agua en una olla y cocer. Porcionar, hacer una bola y mezclar con las algas cocidas."},
+                {Locale.Polish, "Połącz ryż i wodę w garnku i ugotuj. Porcjować, zwijać w kulki i łączyć z ugotowanymi wodorostami."},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Отделите порцию, скатайте в шарик и соедините с приготовленными морскими водорослями."},
+                {Locale.PortugueseBrazil, "Combine arroz e água em uma panela e cozinhe. Divida em porções, enrole em uma bola e combine com algas marinhas cozidas"},
+                {Locale.Japanese, "米と水を鍋に入れて炊く。分量に分け、丸め、茹でた海苔と合わせる。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。取适量，搓成球状，与煮熟的海藻一起食用。"},
+                {Locale.Korean, "냄비에 밥과 물을 넣고 조리합니다. 나누어 공 모양으로 말아 익힌 김과 섞어줍니다."},
+                {Locale.Turkish, "Pirinç ve suyu bir tencerede karıştırın ve pişirin. Porsiyonlara ayırın, top haline getirin ve Pişmiş Deniz Yosunu ile birleştirin"},
             };
             
             public static Dictionary<Locale, string> SoySauce => new Dictionary<Locale, string>
@@ -178,6 +195,23 @@ namespace SwimmingSushiReborn.Utilies
                 {Locale.ChineseSimplified, "将三文鱼切成两半，装盘上桌"},
                 {Locale.Korean, "연어를 두 번 자르고 접시에 담아 제공"},
                 {Locale.Turkish, "Somonu İkili Doğrayın, Tabaklayın ve Servis Edin"},
+            };
+            
+            public static Dictionary<Locale, string> Gunkan => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion, and combine with Cooked Seaweed, and Roe"},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion, and combine with Cooked Seaweed, and Roe"},
+                {Locale.BlankText, ""},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Portionner et combiner avec les algues cuites et la rogue."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Portionieren und mit gekochtem Seetang und Rogen kombinieren"},
+                {Locale.Spanish, "Mezcle el arroz y el agua en una olla y cuézalo. Porcionar y combinar con las algas cocidas y las huevas."},
+                {Locale.Polish, "Połącz ryż i wodę w garnku i ugotuj. Porcjować i połączyć z ugotowanymi wodorostami i ikrą."},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Разделите на порции и соедините с приготовленными морскими водорослями и икрой."},
+                {Locale.PortugueseBrazil, "Misture o arroz e a água em uma panela e cozinhe. Divida em porções e combine com algas marinhas cozidas e ovas"},
+                {Locale.Japanese, "米と水を鍋に入れて炊く。茹でたわかめ、卵と合わせる。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。分装，与煮熟的海藻和鱼子一起食用"},
+                {Locale.Korean, "냄비에 밥과 물을 넣고 조리합니다. 나누어 익힌 김과 알을 넣고 섞어줍니다."},
+                {Locale.Turkish, "Pirinç ve Suyu Bir Tencerede Birleştirin ve Pişirin. Porsiyonlayın ve Pişmiş Deniz Yosunu ve Karaca ile birleştirin"},
             };
         }
 
@@ -232,6 +266,40 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.ChineseSimplified, new ApplianceInfo{Name = "三文鱼", Description = "提供三文鱼"}),
                 (Locale.Korean, new ApplianceInfo{Name = "연어", Description = "연어 제공"}),
                 (Locale.Turkish, new ApplianceInfo{Name = "Somon", Description = "Somon Balığı Sağlar"}),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> FishKnifeProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Fish Knife", Description = "Specialty Fish Knife"}),
+                (Locale.English, new ApplianceInfo{Name = "Fish Knife", Description = "Specialty Fish Knife"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Couteau à poisson", Description = "Spécialité couteau à poisson"}),
+                (Locale.German, new ApplianceInfo{Name = "Fischmesser", Description = "Spezialität Fischmesser"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Cuchillo para pescado", Description = "Cuchillo especial para pescado"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Nóż do ryb", Description = "Specjalistyczny nóż do ryb"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Нож для рыбы", Description = "Специализированный нож для рыбы"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Faca para peixe", Description = "Faca especial para peixes"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "フィッシュナイフ", Description = "スペシャル・フィッシュ・ナイフ"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "鱼刀", Description = "特制鱼刀"}),
+                (Locale.Korean, new ApplianceInfo{Name = "피쉬 나이프", Description = "스페셜티 생선 칼"}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Balık Bıçağı", Description = "Özel Balık Bıçağı"}),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> RoeProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Roe", Description = "Provides Roe"}),
+                (Locale.English, new ApplianceInfo{Name = "Roe", Description = "Provides Roe"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Roe", Description = "Fournit Roe"}),
+                (Locale.German, new ApplianceInfo{Name = "Roe", Description = "Liefert Roe"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Roe", Description = "Proporciona Roe"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Roe", Description = "Zapewnia Roe"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Косуля", Description = "Обеспечивает Ро"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Roe", Description = "Fornece Roe"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "ロー", Description = "ローを提供"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "罗伊", Description = "提供 Roe"}),
+                (Locale.Korean, new ApplianceInfo{Name = "Roe", Description = "알 제공"}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Roe", Description = "Roe sağlar"}),
             };
         }
     }

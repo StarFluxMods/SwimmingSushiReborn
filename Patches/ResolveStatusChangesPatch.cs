@@ -6,6 +6,7 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using Kitchen;
 using KitchenLib.References;
+using KitchenMods;
 using SwimmingSushiReborn.Systems;
 using SwimmingSushiReborn.Utilies;
 
@@ -25,7 +26,7 @@ namespace SwimmingSushiReborn.Patches
 		static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             CodeMatcher matcher = new(instructions);
-
+            
             matcher.MatchForward(false, new CodeMatch(OpCodes.Brfalse), new CodeMatch(OpCodes.Ldloc_0),
                     new CodeMatch(OpCodes.Brfalse), new CodeMatch(OpCodes.Ldarg_0), new CodeMatch(OpCodes.Ldflda))
                 .Advance(3)
@@ -40,15 +41,13 @@ namespace SwimmingSushiReborn.Patches
             return matcher.InstructionEnumeration();
         }
 
-        public static List<CustomProcessResult> x = new List<CustomProcessResult>
+        public static List<CustomProcessResult> customProcessSets = new List<CustomProcessResult>
         {
-            new CustomProcessResult{}
         };
 
         public static int GetCustomProcessResults(CItemUndergoingProcess cItemUndergoingProcess, CItem cItem, int defaultResult)
         {
-
-            foreach (CustomProcessResult customProcessResult in x)
+            foreach (CustomProcessResult customProcessResult in customProcessSets)
             {
                 if (customProcessResult.OriginalItemID == cItem.ID)
                 {

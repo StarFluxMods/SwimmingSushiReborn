@@ -32,12 +32,13 @@ namespace SwimmingSushiReborn
         protected override void OnInitialise()
         {
             Logger.LogWarning($"{MOD_GUID} v{MOD_VERSION} in use!");
-            ResolveStatusChangesPatch.x.Add(new CustomProcessResult
+            
+            ResolveStatusChangesPatch.customProcessSets.Add(new CustomProcessResult
             {
                 OriginalItemID = GDOReferences.Salmon.ID,
                 OriginalResultID = GDOReferences.SalmonFillet.ID,
-                HeldItemID = ItemReferences.SharpKnife,
-                NewResultID = ItemReferences.CrabChopped
+                HeldItemID = GDOReferences.FishKnife.ID,
+                NewResultID = GDOReferences.SalmonWithRoe.ID
             });
         }
 
