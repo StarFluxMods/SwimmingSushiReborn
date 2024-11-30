@@ -14,7 +14,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override CardType CardType => CardType.Default;
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
-        public override int Difficulty => 1;
+        public override int Difficulty => 2;
         public override List<string> StartingNameSet => new()
         {
             "Tri Me!",
