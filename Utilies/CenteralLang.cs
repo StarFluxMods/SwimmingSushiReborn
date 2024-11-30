@@ -108,6 +108,40 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo{Name = "군칸", FlavourText = "가라앉지 않는 맛의 배."}),
                 (Locale.Turkish, new UnlockInfo{Name = "Gunkan", FlavourText = "Batmayan lezzet gemisi."}),
             };
+            
+            public static List<(Locale, UnlockInfo)> FreshNori => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Fresh Nori", FlavourText = "The leaf that holds it all together."}),
+                (Locale.English, new UnlockInfo{Name = "Fresh Nori", FlavourText = "The leaf that holds it all together."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Nori frais", FlavourText = "La feuille qui tient le tout ensemble."}),
+                (Locale.German, new UnlockInfo{Name = "Frischer Nori", FlavourText = "Das Blatt, das alles zusammenhält."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Nori fresco", FlavourText = "La hoja que lo mantiene todo unido."}),
+                (Locale.Polish, new UnlockInfo{Name = "Świeże Nori", FlavourText = "Liść, który trzyma wszystko razem."}),
+                (Locale.Russian, new UnlockInfo{Name = "Свежие нори", FlavourText = "Лист, который держит все вместе."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Nori fresco", FlavourText = "A folha que mantém tudo unido."}),
+                (Locale.Japanese, new UnlockInfo{Name = "生海苔", FlavourText = "すべてをまとめる葉。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "新鲜紫菜", FlavourText = "支撑这一切的树叶"}),
+                (Locale.Korean, new UnlockInfo{Name = "신선한 김", FlavourText = "이 모든 것을 하나로 묶어주는 잎사귀."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Taze Nori", FlavourText = "Her şeyi bir arada tutan yaprak."}),
+            };
+            
+            public static List<(Locale, UnlockInfo)> FreshRoe => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Fresh Roe", FlavourText = "Little pops of ocean joy."}),
+                (Locale.English, new UnlockInfo{Name = "Fresh Roe", FlavourText = "Little pops of ocean joy."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Chevreuil frais", FlavourText = "Des petites touches de joie océanique."}),
+                (Locale.German, new UnlockInfo{Name = "Frischer Rogen", FlavourText = "Kleine Freudensprünge aus dem Meer."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Hueva fresca", FlavourText = "Pequeños estallidos de alegría oceánica."}),
+                (Locale.Polish, new UnlockInfo{Name = "Świeża ikra", FlavourText = "Małe kropelki oceanicznej radości."}),
+                (Locale.Russian, new UnlockInfo{Name = "Свежая икра", FlavourText = "Маленькие всплески океанской радости."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Ovas frescas", FlavourText = "Pequenos toques de alegria do oceano."}),
+                (Locale.Japanese, new UnlockInfo{Name = "新鮮な卵", FlavourText = "小さな海の喜びのポップ。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "新鲜鱼子酱", FlavourText = "小小的海洋欢乐"}),
+                (Locale.Korean, new UnlockInfo{Name = "신선한 알", FlavourText = "바다의 작은 기쁨을 만끽하세요."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Taze Karaca", FlavourText = "Okyanus neşesinin küçük patlamaları."}),
+            };
         }
 
         public static class Recipes
@@ -212,6 +246,40 @@ namespace SwimmingSushiReborn.Utilies
                 {Locale.ChineseSimplified, "将米和水放入锅中煮。分装，与煮熟的海藻和鱼子一起食用"},
                 {Locale.Korean, "냄비에 밥과 물을 넣고 조리합니다. 나누어 익힌 김과 알을 넣고 섞어줍니다."},
                 {Locale.Turkish, "Pirinç ve Suyu Bir Tencerede Birleştirin ve Pişirin. Porsiyonlayın ve Pişmiş Deniz Yosunu ve Karaca ile birleştirin"},
+            };
+            
+            public static Dictionary<Locale, string> FreshNori => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Cook 2 Seaweed and Combine"},
+                {Locale.English, "Cook 2 Seaweed and Combine"},
+                {Locale.BlankText, ""},
+                {Locale.French, "Cuire 2 algues et les mélanger"},
+                {Locale.German, "2 Seegras kochen und kombinieren"},
+                {Locale.Spanish, "Cocer 2 algas y combinar"},
+                {Locale.Polish, "Ugotować 2 wodorosty i połączyć"},
+                {Locale.Russian, "Приготовьте 2 морских водоросли и соедините их"},
+                {Locale.PortugueseBrazil, "Cozinhe 2 algas marinhas e misture"},
+                {Locale.Japanese, "わかめ2枚を茹でて混ぜる"},
+                {Locale.ChineseSimplified, "煮 2 海藻并混合"},
+                {Locale.Korean, "해초 2개를 익혀 섞습니다."},
+                {Locale.Turkish, "2 Deniz Yosununu Pişirin ve Birleştirin"},
+            };
+            
+            public static Dictionary<Locale, string> FreshRoe => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Use Fish Knife to chop Salmon, portion Roe."},
+                {Locale.English, "Use Fish Knife to chop Salmon, portion Roe."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Utiliser le couteau à poisson pour hacher le saumon, portionner les œufs de poisson."},
+                {Locale.German, "Verwenden Sie das Fischmesser, um Lachs und Rogen zu zerteilen."},
+                {Locale.Spanish, "Utilice el Cuchillo de Pescado para trocear Salmón, porción de Huevas."},
+                {Locale.Polish, "Użyj noża do ryb, aby posiekać łososia i porcjować ikrę."},
+                {Locale.Russian, "Используйте нож для рыбы, чтобы нарезать лосося, порционно икру."},
+                {Locale.PortugueseBrazil, "Use a Fish Knife para cortar o salmão, porções de ovas."},
+                {Locale.Japanese, "フィッシュナイフでサーモンと卵を切る。"},
+                {Locale.ChineseSimplified, "用鱼刀切碎鲑鱼和鱼子酱。"},
+                {Locale.Korean, "피시 나이프를 사용하여 연어를 자르고 알을 자릅니다."},
+                {Locale.Turkish, "Somon balığını doğramak için Balık Bıçağı kullanın."},
             };
         }
 
