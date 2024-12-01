@@ -20,6 +20,7 @@ namespace SwimmingSushiReborn.Customs.Items
         };
 
         public override Item SplitSubItem => GDOReferences.CookedRice;
+        public override Item DisposesTo => GDOReferences.Pot;
 
         public override void OnRegister(Item gameDataObject)
         {

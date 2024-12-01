@@ -12,6 +12,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     {
         public override string UniqueNameID => "RicePot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("RicePot").AssignMaterialsByNames();
+        public override Item DisposesTo => GDOReferences.Pot;
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
