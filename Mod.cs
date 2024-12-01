@@ -53,12 +53,14 @@ namespace SwimmingSushiReborn
 
             Events.BuildGameDataEvent += (s, args) =>
             {
+                /*
                 SetupTwoWayProcesses(GDOReferences.Countertop, GDOReferences.RollingMat, new Appliance.ApplianceProcesses
                 {
                     Process = GDOReferences.Roll,
                     Speed = 0.75f,
                     Validity = ProcessValidity.Generic,
                 });
+                */
             };
         }
 

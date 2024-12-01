@@ -34,11 +34,12 @@ namespace SwimmingSushiReborn.Customs.Dishes
 			GDOReferences.Avocado,
 			GDOReferences.Salmon
 		};
+
 		public override HashSet<Process> RequiredProcesses => new()
 		{
 			GDOReferences.Cook,
 			GDOReferences.Chop,
-			GDOReferences.Roll
+			GDOReferences.Knead
 		};
 		public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("SalmonRollIcon").AssignMaterialsByNames();
 		public override List<Dish.MenuItem> ResultingMenuItems => new()

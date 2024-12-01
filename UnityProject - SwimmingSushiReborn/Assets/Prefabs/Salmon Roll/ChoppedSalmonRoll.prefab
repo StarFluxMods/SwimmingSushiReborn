@@ -173,6 +173,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5441256535456239402}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (11)
@@ -239,6 +243,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5441256535456239402}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (9)
@@ -305,6 +313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5441256535456239402}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (10)
@@ -371,6 +383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8231040471843995709}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (1)
@@ -437,6 +453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5315731790387453851}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (4)
@@ -503,6 +523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4708235696546230134}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (6)
@@ -569,6 +593,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5315731790387453851}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (3)
@@ -635,6 +663,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4708235696546230134}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (8)
@@ -701,6 +733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8231040471843995709}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll
@@ -767,6 +803,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5315731790387453851}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (5)
@@ -833,6 +873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4708235696546230134}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (7)
@@ -899,6 +943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8231040471843995709}
     m_Modifications:
+    - target: {fileID: 2268316387270572782, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6528777065261580082, guid: 5f983db0fe55e37408b21d68becd8085, type: 3}
       propertyPath: m_Name
       value: SushiRoll (2)

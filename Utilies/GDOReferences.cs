@@ -6,7 +6,6 @@ using SwimmingSushiReborn.Customs.Appliances;
 using SwimmingSushiReborn.Customs.Dishes;
 using SwimmingSushiReborn.Customs.ItemGroups;
 using SwimmingSushiReborn.Customs.Items;
-using SwimmingSushiReborn.Customs.Processes;
 
 namespace SwimmingSushiReborn.Utilies
 {
@@ -100,15 +99,10 @@ namespace SwimmingSushiReborn.Utilies
 
         #endregion
 
-        #region Processes
-
-        public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
-
-        #endregion
-
         #region Dishes
 
         public static Dish DishSalmonRoll => (Dish)GDOUtils.GetCustomGameDataObject<DishSalmonRoll>().GameDataObject;
+        public static Dish DishGunkan => (Dish)GDOUtils.GetCustomGameDataObject<DishGunkan>().GameDataObject;
 
         #endregion
 

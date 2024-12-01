@@ -70,6 +70,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7334923493741399535}
     m_Modifications:
+    - target: {fileID: 694027562444419036, guid: 31808250d752d3743812fa62a2801bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
+    - target: {fileID: 1727551430825752042, guid: 31808250d752d3743812fa62a2801bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
+    - target: {fileID: 6710429766383400791, guid: 31808250d752d3743812fa62a2801bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87874db6806ec6d42ad449c66618d3fa, type: 2}
     - target: {fileID: 6938670454872487078, guid: 31808250d752d3743812fa62a2801bc9, type: 3}
       propertyPath: m_RootOrder
       value: 2

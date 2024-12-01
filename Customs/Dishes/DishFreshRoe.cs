@@ -29,7 +29,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>
         {
-            GDOReferences.DishSalmonRoll
+            GDOReferences.DishGunkan
         };
 
         public override HashSet<Item> BlockProviders => new HashSet<Item>

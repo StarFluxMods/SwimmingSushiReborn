@@ -21,7 +21,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         {
             new Appliance.ApplianceProcesses
             {
-                Process = GDOReferences.Roll,
+                Process = GDOReferences.Knead,
                 Speed = 2f,
                 Validity = ProcessValidity.Generic
             }
@@ -29,7 +29,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
 
         public override List<Process> RequiresProcessForShop => new List<Process>
         {
-            GDOReferences.Roll
+            GDOReferences.Knead
         };
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
