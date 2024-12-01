@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using KitchenData;
 using KitchenLib.Customs;
+using KitchenLib.Utils;
 using SwimmingSushiReborn.Utilies;
+using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Dishes
 {
@@ -23,6 +25,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.Chop
         };
+        public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("FreshRoeIcon").AssignMaterialsByNames();
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>
         {
@@ -33,6 +36,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.Roe
         };
+        public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;
         
         public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.FreshRoe;
 
