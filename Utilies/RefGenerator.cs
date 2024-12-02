@@ -9,8 +9,6 @@ namespace SwimmingSushiReborn.Utilies
 {
     public class RefGenerator
     {
-        
-
         private static Type GetGDOType(Type type)
         {
             return type.Namespace.Contains("KitchenLib") ? type : GetGDOType(type.BaseType);
