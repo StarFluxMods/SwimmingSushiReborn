@@ -11,7 +11,7 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 
 namespace SwimmingSushiReborn
 {
-    public class Mod : BaseMod, IModSystem , IAutoRegisterAll
+    public class Mod : BaseMod, IModSystem, IAutoRegisterAll
     {
         public const string MOD_GUID = "com.starfluxgames.swimmingsushireborn";
         public const string MOD_NAME = "Swimming Sushi Reborn";
@@ -21,15 +21,17 @@ namespace SwimmingSushiReborn
 
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
-        
+
         internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = true;
 
-        public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly()) { }
+        public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly())
+        {
+        }
 
         protected override void OnInitialise()
         {
             Logger.LogWarning($"{MOD_GUID} v{MOD_VERSION} in use!");
-            
+
             ResolveStatusChangesPatch.customProcessSets.Add(new CustomProcessResult
             {
                 OriginalItemID = GDOReferences.Salmon.ID,

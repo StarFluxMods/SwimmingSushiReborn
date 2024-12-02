@@ -13,6 +13,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     {
         public override string UniqueNameID => "PlatedGunkan";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedGunkan").AssignMaterialsByNames();
+
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -35,7 +36,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 1
             }
         };
-        
+
         public override ItemValue ItemValue => ItemValue.SideMedium;
     }
 }

@@ -5,9 +5,10 @@ using Unity.Entities;
 
 namespace SwimmingSushiReborn.Systems
 {
-    public class UnlimitedMoney : NightSystem// , IModSystem
+    public class UnlimitedMoney : NightSystem // , IModSystem
     {
         private EntityQuery _sMoney;
+
         protected override void Initialise()
         {
             base.Initialise();

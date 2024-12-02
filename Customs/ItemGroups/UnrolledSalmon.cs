@@ -12,6 +12,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     {
         public override string UniqueNameID => "UnrolledSalmon";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("UnrolledSalmon").AssignMaterialsByNames();
+
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -35,6 +36,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 2
             }
         };
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
@@ -44,6 +46,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Result = GDOReferences.RolledSalmon
             }
         };
+
         public override void OnRegister(ItemGroup gameDataObject)
         {
             base.OnRegister(gameDataObject);

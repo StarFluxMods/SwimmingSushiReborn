@@ -12,6 +12,7 @@ namespace SwimmingSushiReborn.Customs.Items
     {
         public override string UniqueNameID => "FishKnife";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("FishKnife").AssignMaterialsByNames();
+
         public override List<IItemProperty> Properties => new List<IItemProperty>
         {
             new CEquippableTool

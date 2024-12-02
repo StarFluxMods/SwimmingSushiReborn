@@ -15,6 +15,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
         public override int Difficulty => 2;
+
         public override List<string> StartingNameSet => new()
         {
             "Nigiri Me Out",
@@ -23,6 +24,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
             "Oh Snap-per!",
             "Hooked on Sushi"
         };
+
         public override HashSet<Item> MinimumIngredients => new()
         {
             GDOReferences.Plate,
@@ -31,13 +33,16 @@ namespace SwimmingSushiReborn.Customs.Dishes
             GDOReferences.Water,
             GDOReferences.Salmon
         };
+
         public override HashSet<Process> RequiredProcesses => new()
         {
             GDOReferences.Cook,
             GDOReferences.Chop,
             GDOReferences.Knead
         };
+
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("NigiriIcon").AssignMaterialsByNames();
+
         public override List<Dish.MenuItem> ResultingMenuItems => new()
         {
             new Dish.MenuItem
@@ -56,7 +61,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         };
 
         public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;
-        
+
         public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.Nigiri;
 
         public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.Nigiri;

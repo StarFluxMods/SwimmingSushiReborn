@@ -11,6 +11,7 @@ namespace SwimmingSushiReborn.Customs.Items
     {
         public override string UniqueNameID => "Salmon";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Salmon").AssignMaterialsByNames();
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
@@ -20,6 +21,7 @@ namespace SwimmingSushiReborn.Customs.Items
                 Result = GDOReferences.SalmonFillet
             }
         };
+
         public override Appliance DedicatedProvider => GDOReferences.SalmonProvider;
     }
 }

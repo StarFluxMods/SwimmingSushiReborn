@@ -26,9 +26,8 @@ namespace SwimmingSushiReborn.Utilies
                     {
                         categories.Add(GetGDOType(type).Name.Replace("Custom", ""), new List<string>());
                     }
-                    
+
                     categories[GetGDOType(type).Name.Replace("Custom", "")].Add($"{protectionLevel} static {GetGDOType(type).Name.Replace("Custom", "")} {prefix}{type.Name} => ({GetGDOType(type).Name.Replace("Custom", "")})GDOUtils.GetCustomGameDataObject<{type.Name}>().GameDataObject;");
-                    
                 }
             }
 

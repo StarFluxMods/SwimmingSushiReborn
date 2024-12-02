@@ -13,10 +13,12 @@ namespace SwimmingSushiReborn.Customs.Appliances
     {
         public override string UniqueNameID => "RollingMat";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("RollingMat").AssignMaterialsByNames();
+
         public override List<IApplianceProperty> Properties => new()
         {
             new CItemHolder()
         };
+
         public override List<Appliance.ApplianceProcesses> Processes => new()
         {
             new Appliance.ApplianceProcesses
@@ -31,6 +33,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         {
             GDOReferences.Knead
         };
+
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
         public override ShoppingTags ShoppingTags => ShoppingTags.Cooking | ShoppingTags.Misc;
@@ -39,7 +42,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         public override void OnRegister(Appliance gameDataObject)
         {
             base.OnRegister(gameDataObject);
-            
+
             HoldPointContainer holdPointContainer = gameDataObject.Prefab.AddComponent<HoldPointContainer>();
             holdPointContainer.HoldPoint = gameDataObject.Prefab.GetChild("Counter/Hold Point").transform;
         }

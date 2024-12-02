@@ -14,6 +14,7 @@ namespace SwimmingSushiReborn.Customs.Items
         public override string UniqueNameID => "CookedRicePot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("CookedRicePot").AssignMaterialsByNames();
         public override int SplitCount => 3;
+
         public override List<Item> SplitDepletedItems => new()
         {
             GDOReferences.Pot

@@ -15,16 +15,18 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Extra;
         public override int Difficulty => 2;
-        
+
         public override HashSet<Item> MinimumIngredients => new()
         {
             GDOReferences.Salmon,
             GDOReferences.FishKnife
         };
+
         public override HashSet<Process> RequiredProcesses => new()
         {
             GDOReferences.Chop
         };
+
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("FreshRoeIcon").AssignMaterialsByNames();
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>
@@ -36,8 +38,9 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.Roe
         };
+
         public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;
-        
+
         public override List<(Locale, UnlockInfo)> InfoList => CenteralLang.Unlocks.FreshRoe;
 
         public override Dictionary<Locale, string> Recipe => CenteralLang.Recipes.FreshRoe;

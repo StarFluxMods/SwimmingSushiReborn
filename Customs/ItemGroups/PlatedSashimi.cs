@@ -13,6 +13,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     {
         public override string UniqueNameID => "PlatedSashimi";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedSashimi").AssignMaterialsByNames();
+
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -35,6 +36,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 1,
             }
         };
+
         public override ItemValue ItemValue => ItemValue.Small;
     }
 }

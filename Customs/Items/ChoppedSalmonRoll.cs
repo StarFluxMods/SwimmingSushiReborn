@@ -14,6 +14,7 @@ namespace SwimmingSushiReborn.Customs.Items
         public override string UniqueNameID => "ChoppedSalmonRoll";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("ChoppedSalmonRoll").AssignMaterialsByNames();
         public override int SplitCount => 3;
+
         public override List<Item> SplitDepletedItems => new()
         {
             GDOReferences.PortionedSalmonRoll

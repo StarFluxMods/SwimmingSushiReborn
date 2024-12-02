@@ -13,6 +13,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
         public override string UniqueNameID => "RicePot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("RicePot").AssignMaterialsByNames();
         public override Item DisposesTo => GDOReferences.Pot;
+
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -36,6 +37,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 2
             }
         };
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess

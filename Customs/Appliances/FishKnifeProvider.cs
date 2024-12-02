@@ -13,10 +13,12 @@ namespace SwimmingSushiReborn.Customs.Appliances
     {
         public override string UniqueNameID => "FishKnifeProvider";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("FishKnifeProvider").AssignMaterialsByNames();
+
         public override List<IApplianceProperty> Properties => new()
         {
             KitchenPropertiesUtils.GetCItemProvider(GDOReferences.FishKnife.ID, 1, 1, false, false, false, false, false, false, false)
         };
+
         public override bool SellOnlyAsDuplicate => true;
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;

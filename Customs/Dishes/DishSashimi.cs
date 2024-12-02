@@ -15,6 +15,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
         public override int Difficulty => 1;
+
         public override List<string> StartingNameSet => new()
         {
             "Sashimi Crazy",
@@ -23,16 +24,20 @@ namespace SwimmingSushiReborn.Customs.Dishes
             "Simply Fin-credible",
             "Sea the Flavor",
         };
+
         public override HashSet<Item> MinimumIngredients => new()
         {
             GDOReferences.Plate,
             GDOReferences.Salmon,
         };
+
         public override HashSet<Process> RequiredProcesses => new()
         {
             GDOReferences.Chop
         };
+
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("SashimiIcon").AssignMaterialsByNames();
+
         public override List<Dish.MenuItem> ResultingMenuItems => new()
         {
             new Dish.MenuItem

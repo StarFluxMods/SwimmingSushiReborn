@@ -13,6 +13,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
     {
         public override string UniqueNameID => "PlatedOnigiri";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PlatedOnigiri").AssignMaterialsByNames();
+
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new ItemGroup.ItemSet
@@ -35,6 +36,7 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Max = 1,
             }
         };
+
         public override ItemValue ItemValue => ItemValue.SideMedium;
     }
 }

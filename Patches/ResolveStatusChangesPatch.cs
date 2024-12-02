@@ -21,12 +21,12 @@ namespace SwimmingSushiReborn.Patches
             Type type = AccessTools.FirstInner(typeof(ResolveStatusChanges), t => t.Name.Contains($"c__DisplayClass_OnUpdate_LambdaJob0"));
             return AccessTools.FirstMethod(type, method => method.Name.Contains("OriginalLambdaBody"));
         }
-        
-		[HarmonyTranspiler]
-		static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+
+        [HarmonyTranspiler]
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             CodeMatcher matcher = new(instructions);
-            
+
             matcher.MatchForward(false, new CodeMatch(OpCodes.Brfalse), new CodeMatch(OpCodes.Ldloc_0),
                     new CodeMatch(OpCodes.Brfalse), new CodeMatch(OpCodes.Ldarg_0), new CodeMatch(OpCodes.Ldflda))
                 .Advance(3)

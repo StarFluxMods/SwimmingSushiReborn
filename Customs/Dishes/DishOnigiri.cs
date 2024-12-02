@@ -15,6 +15,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
         public override DishType Type => DishType.Main;
         public override int Difficulty => 2;
+
         public override List<string> StartingNameSet => new()
         {
             "Tri Me!",
@@ -23,6 +24,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
             "Shape of Rice",
             "Grab and Go-rice"
         };
+
         public override HashSet<Item> MinimumIngredients => new()
         {
             GDOReferences.Plate,
@@ -31,12 +33,15 @@ namespace SwimmingSushiReborn.Customs.Dishes
             GDOReferences.Water,
             GDOReferences.Seaweed
         };
+
         public override HashSet<Process> RequiredProcesses => new()
         {
             GDOReferences.Cook,
             GDOReferences.Knead
         };
+
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("OnigiriIcon").AssignMaterialsByNames();
+
         public override List<Dish.MenuItem> ResultingMenuItems => new()
         {
             new Dish.MenuItem

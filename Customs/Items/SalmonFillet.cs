@@ -12,6 +12,7 @@ namespace SwimmingSushiReborn.Customs.Items
         public override string UniqueNameID => "SalmonFillet";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("SalmonFillet").AssignMaterialsByNames();
         public override ItemStorage ItemStorageFlags => ItemStorage.StackableFood;
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
