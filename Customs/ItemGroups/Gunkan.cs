@@ -3,12 +3,13 @@ using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
+using SwimmingSushiReborn.Customs.Generic;
 using SwimmingSushiReborn.Utilies;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.ItemGroups
 {
-    public class Gunkan : CustomItemGroup
+    public class Gunkan : GenericFoodItemGroup
     {
         public override string UniqueNameID => "Gunkan";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Gunkan").AssignMaterialsByNames();

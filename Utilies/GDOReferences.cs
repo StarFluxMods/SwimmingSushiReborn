@@ -6,11 +6,18 @@ using SwimmingSushiReborn.Customs.Appliances;
 using SwimmingSushiReborn.Customs.Dishes;
 using SwimmingSushiReborn.Customs.ItemGroups;
 using SwimmingSushiReborn.Customs.Items;
+using SwimmingSushiReborn.Customs.Processes;
 
 namespace SwimmingSushiReborn.Utilies
 {
     public static class GDOReferences
     {
+        #region Process
+
+        public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
+
+        #endregion
+
         #region IngredientLib
 
         #region Item
@@ -53,7 +60,6 @@ namespace SwimmingSushiReborn.Utilies
         #endregion
 
         #endregion
-
 
         #region Item
 

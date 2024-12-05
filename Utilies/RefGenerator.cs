@@ -14,7 +14,7 @@ namespace SwimmingSushiReborn.Utilies
             return type.Namespace.Contains("KitchenLib") ? type : GetGDOType(type.BaseType);
         }
 
-        private static void GenerateGDOReferences(Assembly assembly, string file, string prefix = "", string protectionLevel = "public")
+        public static void GenerateGDOReferences(Assembly assembly, string file, string prefix = "", string protectionLevel = "public")
         {
             List<string> lines = new List<string>();
             Dictionary<string, List<string>> categories = new Dictionary<string, List<string>>();

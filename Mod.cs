@@ -1,8 +1,11 @@
+using System.IO;
 using KitchenLib;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
 using System.Linq;
 using System.Reflection;
+using KitchenData;
+using KitchenLib.Event;
 using KitchenLib.Interfaces;
 using SwimmingSushiReborn.Patches;
 using SwimmingSushiReborn.Utilies;
@@ -22,7 +25,7 @@ namespace SwimmingSushiReborn
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
 
-        internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = true;
+        internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = false;
 
         public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly())
         {
@@ -50,7 +53,26 @@ namespace SwimmingSushiReborn
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault() ?? throw new MissingAssetBundleException(MOD_GUID);
             Logger = InitLogger();
 
-            // GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
+            Events.BuildGameDataEvent += (sender, args) =>
+            {
+                foreach (Appliance appliance in args.gamedata.Get<Appliance>())
+                {
+                    if (appliance.Processes is not { Count: > 0 }) continue;
+                    foreach (var process in appliance.Processes.Where(process => process.Process == GDOReferences.Knead))
+                    {
+                        appliance.Processes.Add(new Appliance.ApplianceProcesses
+                        {
+                            Process = GDOReferences.Roll,
+                            IsAutomatic = process.IsAutomatic,
+                            Speed = process.Speed,
+                            Validity = process.Validity
+                        });
+                        break;
+                    }
+                }
+            };
+
+            // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
         }
     }
 }
