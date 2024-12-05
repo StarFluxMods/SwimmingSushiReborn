@@ -107,7 +107,6 @@ namespace SwimmingSushiReborn.Utilies
         public static Appliance FishKnifeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<FishKnifeProvider>().GameDataObject;
         public static Appliance NoriProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
         public static Appliance RoeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<RoeProvider>().GameDataObject;
-        public static Appliance RollingMat => (Appliance)GDOUtils.GetCustomGameDataObject<RollingMat>().GameDataObject;
         public static Appliance SalmonProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SalmonProvider>().GameDataObject;
 
         #endregion
