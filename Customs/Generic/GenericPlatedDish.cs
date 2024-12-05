@@ -8,5 +8,6 @@ namespace SwimmingSushiReborn.Customs.Generic
     {
         public override Item DisposesTo => GDOReferences.Plate;
         public override Item DirtiesTo => GDOReferences.PlateDirty;
+        public override bool CanContainSide => true;
     }
 }
