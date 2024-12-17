@@ -19,6 +19,17 @@ namespace SwimmingSushiReborn.Customs.Items
         {
             GDOReferences.Pot
         };
+        
+        public override List<Item.ItemProcess> Processes => new()
+        {
+            new Item.ItemProcess
+            {
+                Process = GDOReferences.Cook,
+                Duration = 10,
+                Result = GDOReferences.BurntRicePot,
+                IsBad = true
+            }
+        };
 
         public override Item SplitSubItem => GDOReferences.CookedRice;
         public override Item DisposesTo => GDOReferences.Pot;

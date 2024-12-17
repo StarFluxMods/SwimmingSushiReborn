@@ -3,21 +3,17 @@ using KitchenData;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using SwimmingSushiReborn.Customs.Appliances;
+using SwimmingSushiReborn.Customs.Decor;
 using SwimmingSushiReborn.Customs.Dishes;
 using SwimmingSushiReborn.Customs.ItemGroups;
 using SwimmingSushiReborn.Customs.Items;
+using SwimmingSushiReborn.Customs.PlayerCosmetics;
 using SwimmingSushiReborn.Customs.Processes;
 
 namespace SwimmingSushiReborn.Utilies
 {
     public static class GDOReferences
     {
-        #region Process
-
-        public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
-
-        #endregion
-
         #region IngredientLib
 
         #region Item
@@ -37,6 +33,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Process Cook => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook);
         public static Process Chop => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Chop);
         public static Process Knead => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Knead);
+        public static Process Clean => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Clean);
 
         #endregion
 
@@ -56,8 +53,23 @@ namespace SwimmingSushiReborn.Utilies
         #region Appliance
 
         public static Appliance Countertop => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Countertop);
+        public static Appliance WallpaperApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.WallpaperApplicator);
+        public static Appliance FlooringApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.FlooringApplicator);
 
         #endregion
+
+        #endregion
+
+        #region Process
+
+        public static Process Roll => (Process)GDOUtils.GetCustomGameDataObject<Roll>().GameDataObject;
+
+        #endregion
+
+        #region PlayerCosmetic
+
+        public static PlayerCosmetic JapaneseBandana => (PlayerCosmetic)GDOUtils.GetCustomGameDataObject<JapaneseBandana>().GameDataObject;
+        public static PlayerCosmetic NigiriCostume => (PlayerCosmetic)GDOUtils.GetCustomGameDataObject<NigiriCostume>().GameDataObject;
 
         #endregion
 
@@ -66,6 +78,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Item ChoppedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<ChoppedSalmonRoll>().GameDataObject;
         public static Item CookedRice => (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject;
         public static Item CookedRicePot => (Item)GDOUtils.GetCustomGameDataObject<CookedRicePot>().GameDataObject;
+        public static Item BurntRicePot => (Item)GDOUtils.GetCustomGameDataObject<BurntRicePot>().GameDataObject;
         public static Item FishKnife => (Item)GDOUtils.GetCustomGameDataObject<FishKnife>().GameDataObject;
         public static Item PortionedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedSalmonRoll>().GameDataObject;
         public static Item RiceBall => (Item)GDOUtils.GetCustomGameDataObject<RiceBall>().GameDataObject;
@@ -108,11 +121,20 @@ namespace SwimmingSushiReborn.Utilies
 
         #endregion
 
+        #region Decor
+
+        public static Decor WallpaperBubbles => (Decor)GDOUtils.GetCustomGameDataObject<WallpaperBubbles>().GameDataObject;
+        public static Decor WallpaperSeaweed => (Decor)GDOUtils.GetCustomGameDataObject<WallpaperSeaweed>().GameDataObject;
+        public static Decor SandFloor => (Decor)GDOUtils.GetCustomGameDataObject<SandFloor>().GameDataObject;
+
+        #endregion
+
         #region Appliance
 
         public static Appliance FishKnifeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<FishKnifeProvider>().GameDataObject;
         public static Appliance NoriProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
         public static Appliance RoeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<RoeProvider>().GameDataObject;
+        public static Appliance RollingMachine => (Appliance)GDOUtils.GetCustomGameDataObject<RollingMachine>().GameDataObject;
         public static Appliance SalmonProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SalmonProvider>().GameDataObject;
 
         #endregion

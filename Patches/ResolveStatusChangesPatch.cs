@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using Kitchen;
-using KitchenLib.References;
-using KitchenMods;
 using SwimmingSushiReborn.Systems;
 using SwimmingSushiReborn.Utilies;
 
@@ -55,6 +52,11 @@ namespace SwimmingSushiReborn.Patches
                     {
                         if (SystemHelper.Instance.IsUserHoldingItem(customProcessResult.HeldItemID, cItemUndergoingProcess.Actor))
                         {
+                            if (customProcessResult.NewResultID == GDOReferences.SalmonWithRoe.ID)
+                            {
+                                Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SPECIAL_KNIFE);
+                            }
+
                             return customProcessResult.NewResultID;
                         }
                     }
