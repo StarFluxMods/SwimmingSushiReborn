@@ -142,6 +142,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo { Name = "신선한 알", FlavourText = "바다의 작은 기쁨을 만끽하세요." }),
                 (Locale.Turkish, new UnlockInfo { Name = "Taze Karaca", FlavourText = "Okyanus neşesinin küçük patlamaları." }),
             };
+            
+            public static List<(Locale, UnlockInfo)> ChonkyNigiri => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Bigger bites, bolder delights."}),
+                (Locale.English, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Bigger bites, bolder delights."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "De plus grandes bouchées, des délices plus audacieux."}),
+                (Locale.German, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Größere Bissen, kühneres Vergnügen."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Bocados más grandes, delicias más audaces."}),
+                (Locale.Polish, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Większe kęsy, odważniejsze rozkosze."}),
+                (Locale.Russian, new UnlockInfo{Name = "Чонки нигири", FlavourText = "Больше укусов, больше удовольствия."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Mordidas maiores, delícias mais ousadas."}),
+                (Locale.Japanese, new UnlockInfo{Name = "ちょんまげ握り", FlavourText = "より大きな一口、より大胆な喜び。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "更大的口感，更大胆的享受。"}),
+                (Locale.Korean, new UnlockInfo{Name = "촌키 니기리", FlavourText = "더 큰 한입, 더 대담한 즐거움."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Chonky Nigiri", FlavourText = "Daha büyük ısırıklar, daha cesur lezzetler."}),
+            };
         }
 
         public static class Recipes
@@ -281,6 +298,23 @@ namespace SwimmingSushiReborn.Utilies
                 { Locale.Korean, "피시 나이프를 사용하여 연어를 자르고 알을 자릅니다." },
                 { Locale.Turkish, "Somon balığını doğramak için Balık Bıçağı kullanın." },
             };
+            
+            public static Dictionary<Locale, string> ChonkyNigiri => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion and roll, Portion and roll another, combine with Chopped Salmon."},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion and roll, Portion and roll another, combine with Chopped Salmon."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Portionner et rouler, portionner et rouler à nouveau, combiner avec du saumon haché."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Portionieren und rollen, weitere Portionieren und rollen, mit dem gehackten Lachs kombinieren."},
+                {Locale.Spanish, "Combine Arroz y Agua en una Olla y Cocine. Porcionar y enrollar, Porcionar y enrollar otro, combinar con Salmón picado."},
+                {Locale.Polish, "Połączyć ryż i wodę w garnku i ugotować. Porcjować i zwijać, porcjować i zwijać kolejne porcje, połączyć z posiekanym łososiem."},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Нарежьте порционно и сверните в рулет, нарежьте еще порционно и сверните в рулет, соедините с нарезанным лососем."},
+                {Locale.PortugueseBrazil, "Combine arroz e água em uma panela e cozinhe. Porcione e enrole, porcione e enrole outro, combine com o salmão picado."},
+                {Locale.Japanese, "米と水を鍋に入れて炊く。鮭のみじん切りと合わせる。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。分量后卷起，再分量卷起，与切碎的三文鱼混合。"},
+                {Locale.Korean, "냄비에 밥과 물을 넣고 조리합니다. 한 숟가락씩 떠서 굴리고, 또 한 숟가락씩 떠서 굴려 다진 연어와 섞어줍니다."},
+                {Locale.Turkish, "Pirinç ve suyu bir tencerede karıştırın ve pişirin. Porsiyonlayın ve yuvarlayın, başka bir porsiyonlayın ve yuvarlayın, Doğranmış Somon ile birleştirin."},
+            };
         }
 
         public static class Appliances
@@ -369,58 +403,76 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new ApplianceInfo { Name = "Roe", Description = "알 제공" }),
                 (Locale.Turkish, new ApplianceInfo { Name = "Roe", Description = "Roe sağlar" }),
             };
-            
+
             public static List<(Locale, ApplianceInfo)> RollingMachine => new List<(Locale, ApplianceInfo)>
-{
-    (Locale.Default, new ApplianceInfo{Name = "Rolling Machine", Description = "Don't have time to roll sushi?", Tags = new List<string>{"Automatic", "2x <sprite name=\"roll\">"}}),
-    (Locale.English, new ApplianceInfo{Name = "Rolling Machine", Description = "Don't have time to roll sushi?", Tags = new List<string>{"Automatic", "2x <sprite name=\"roll\">"}}),
-    (Locale.BlankText, new ApplianceInfo{Name = "", Description = "", Tags = new List<string>{}}),
-    (Locale.French, new ApplianceInfo{Name = "Machine à rouler", Description = "Vous n'avez pas le temps de rouler des sushis ?", Tags = new List<string>{"Automatique", "2x <sprite name=\"roll\">"}}),
-    (Locale.German, new ApplianceInfo{Name = "Walzmaschine", Description = "Sie haben keine Zeit, Sushi zu rollen?", Tags = new List<string>{"Automatisch", "2x <sprite name=\"roll\">"}}),
-    (Locale.Spanish, new ApplianceInfo{Name = "Máquina laminadora", Description = "¿No tienes tiempo para enrollar sushi?", Tags = new List<string>{"Automático", "2x <sprite name=\"roll\">"}}),
-    (Locale.Polish, new ApplianceInfo{Name = "Walcarka", Description = "Nie masz czasu na rolowanie sushi?", Tags = new List<string>{"Automatyczny", "2x <sprite name=\"roll\">"}}),
-    (Locale.Russian, new ApplianceInfo{Name = "Прокатный станок", Description = "У вас нет времени на приготовление суши?", Tags = new List<string>{"Автоматический", "2x <sprite name=\"roll\">"}}),
-    (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Máquina de laminação", Description = "Não tem tempo para enrolar o sushi?", Tags = new List<string>{"Automático", "2x <sprite name=\"roll\">"}}),
-    (Locale.Japanese, new ApplianceInfo{Name = "圧延機", Description = "寿司を巻く時間がない？", Tags = new List<string>{"自動", "2x <sprite name=\"roll\">"}}),
-    (Locale.ChineseSimplified, new ApplianceInfo{Name = "滚压机", Description = "没有时间卷寿司？", Tags = new List<string>{"自动", "2x <sprite name=\"roll\">"}}),
-    (Locale.Korean, new ApplianceInfo{Name = "롤링 머신", Description = "초밥을 굴릴 시간이 없으신가요?", Tags = new List<string>{"자동", "2x <sprite name=\"roll\">"}}),
-    (Locale.Turkish, new ApplianceInfo{Name = "Haddeleme Makinesi", Description = "Suşi sarmak için vaktiniz yok mu?", Tags = new List<string>{"Otomatik", "2x <sprite name=\"roll\">"}}),
-};
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Rolling Machine", Description = "Don't have time to roll sushi?", Tags = new List<string> { "Automatic", "2x <sprite name=\"roll\">" } }),
+                (Locale.English, new ApplianceInfo { Name = "Rolling Machine", Description = "Don't have time to roll sushi?", Tags = new List<string> { "Automatic", "2x <sprite name=\"roll\">" } }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "", Tags = new List<string> { } }),
+                (Locale.French, new ApplianceInfo { Name = "Machine à rouler", Description = "Vous n'avez pas le temps de rouler des sushis ?", Tags = new List<string> { "Automatique", "2x <sprite name=\"roll\">" } }),
+                (Locale.German, new ApplianceInfo { Name = "Walzmaschine", Description = "Sie haben keine Zeit, Sushi zu rollen?", Tags = new List<string> { "Automatisch", "2x <sprite name=\"roll\">" } }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Máquina laminadora", Description = "¿No tienes tiempo para enrollar sushi?", Tags = new List<string> { "Automático", "2x <sprite name=\"roll\">" } }),
+                (Locale.Polish, new ApplianceInfo { Name = "Walcarka", Description = "Nie masz czasu na rolowanie sushi?", Tags = new List<string> { "Automatyczny", "2x <sprite name=\"roll\">" } }),
+                (Locale.Russian, new ApplianceInfo { Name = "Прокатный станок", Description = "У вас нет времени на приготовление суши?", Tags = new List<string> { "Автоматический", "2x <sprite name=\"roll\">" } }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Máquina de laminação", Description = "Não tem tempo para enrolar o sushi?", Tags = new List<string> { "Automático", "2x <sprite name=\"roll\">" } }),
+                (Locale.Japanese, new ApplianceInfo { Name = "圧延機", Description = "寿司を巻く時間がない？", Tags = new List<string> { "自動", "2x <sprite name=\"roll\">" } }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "滚压机", Description = "没有时间卷寿司？", Tags = new List<string> { "自动", "2x <sprite name=\"roll\">" } }),
+                (Locale.Korean, new ApplianceInfo { Name = "롤링 머신", Description = "초밥을 굴릴 시간이 없으신가요?", Tags = new List<string> { "자동", "2x <sprite name=\"roll\">" } }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Haddeleme Makinesi", Description = "Suşi sarmak için vaktiniz yok mu?", Tags = new List<string> { "Otomatik", "2x <sprite name=\"roll\">" } }),
+            };
+
             public static List<(Locale, ApplianceInfo)> FishTank => new List<(Locale, ApplianceInfo)>
             {
-                (Locale.Default, new ApplianceInfo{Name = "Fish Tank", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.English, new ApplianceInfo{Name = "Fish Tank", Description = "P. Sherman 42 Wallaby Way"}),
+                (Locale.Default, new ApplianceInfo { Name = "Fish Tank", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.English, new ApplianceInfo { Name = "Fish Tank", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Réservoir de poissons", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.German, new ApplianceInfo { Name = "Fischtank", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Pecera", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Polish, new ApplianceInfo { Name = "Zbiornik na ryby", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Russian, new ApplianceInfo { Name = "Рыбный аквариум", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Tanque de peixes", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Japanese, new ApplianceInfo { Name = "フィッシュタンク", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "鱼缸", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Korean, new ApplianceInfo { Name = "어항", Description = "P. Sherman 42 Wallaby Way" }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Balık Tankı", Description = "P. Sherman 42 Wallaby Way" }),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> FishDisplayBoard => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Mounted Fish", Description = "Hooked on making your place look cooler."}),
+                (Locale.English, new ApplianceInfo{Name = "Mounted Fish", Description = "Hooked on making your place look cooler."}),
                 (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
-                (Locale.French, new ApplianceInfo{Name = "Réservoir de poissons", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.German, new ApplianceInfo{Name = "Fischtank", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Spanish, new ApplianceInfo{Name = "Pecera", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Polish, new ApplianceInfo{Name = "Zbiornik na ryby", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Russian, new ApplianceInfo{Name = "Рыбный аквариум", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Tanque de peixes", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Japanese, new ApplianceInfo{Name = "フィッシュタンク", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.ChineseSimplified, new ApplianceInfo{Name = "鱼缸", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Korean, new ApplianceInfo{Name = "어항", Description = "P. Sherman 42 Wallaby Way"}),
-                (Locale.Turkish, new ApplianceInfo{Name = "Balık Tankı", Description = "P. Sherman 42 Wallaby Way"}),
+                (Locale.French, new ApplianceInfo{Name = "Poisson monté", Description = "Accroché à l'idée de rendre votre lieu de vie plus cool."}),
+                (Locale.German, new ApplianceInfo{Name = "Montierter Fisch", Description = "Sie sind darauf aus, Ihre Wohnung cooler aussehen zu lassen."}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Peces montados", Description = "Enganchado a hacer que tu casa parezca más guay."}),
+                (Locale.Polish, new ApplianceInfo{Name = "Zamontowana ryba", Description = "Nastawiony na to, by Twoje mieszkanie wyglądało lepiej."}),
+                (Locale.Russian, new ApplianceInfo{Name = "Монтированная рыба", Description = "Нацелены на то, чтобы ваше жилье выглядело круче."}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Peixe montado", Description = "Viciado em deixar sua casa mais legal."}),
+                (Locale.Japanese, new ApplianceInfo{Name = "マウント・フィッシュ", Description = "あなたの場所をよりクールに見せることに夢中。"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "骑鱼", Description = "让你的地方看起来更酷。"}),
+                (Locale.Korean, new ApplianceInfo{Name = "기마 물고기", Description = "공간을 더 멋지게 꾸미는 데 푹 빠졌습니다."}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Atlı Balık", Description = "Evinizi daha havalı göstermeye odaklanın."}),
             };
         }
 
         public static class Processes
         {
-            public static List<(Locale, ProcessInfo)> Roll => new List<(Locale, ProcessInfo)> 
+            public static List<(Locale, ProcessInfo)> Roll => new List<(Locale, ProcessInfo)>
             {
-                (Locale.Default, new ProcessInfo{Name = "Roll", Icon = "<sprite name=\"roll\">",}),
-                (Locale.English, new ProcessInfo{Name = "Roll", Icon = "<sprite name=\"roll\">",}),
-                (Locale.BlankText, new ProcessInfo{Name = "", Icon = "",}),
-                (Locale.French, new ProcessInfo{Name = "Rouleau", Icon = "<sprite name=\"roll\">",}),
-                (Locale.German, new ProcessInfo{Name = "Rolle", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Spanish, new ProcessInfo{Name = "Rollo", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Polish, new ProcessInfo{Name = "Rolka", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Russian, new ProcessInfo{Name = "Рулон", Icon = "<sprite name=\"roll\">",}),
-                (Locale.PortugueseBrazil, new ProcessInfo{Name = "Rolo", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Japanese, new ProcessInfo{Name = "ロール", Icon = "<sprite name=\"roll\">",}),
-                (Locale.ChineseSimplified, new ProcessInfo{Name = "卷轴", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Korean, new ProcessInfo{Name = "롤", Icon = "<sprite name=\"roll\">",}),
-                (Locale.Turkish, new ProcessInfo{Name = "Rulo", Icon = "<sprite name=\"roll\">",}),
+                (Locale.Default, new ProcessInfo { Name = "Roll", Icon = "<sprite name=\"roll\">", }),
+                (Locale.English, new ProcessInfo { Name = "Roll", Icon = "<sprite name=\"roll\">", }),
+                (Locale.BlankText, new ProcessInfo { Name = "", Icon = "", }),
+                (Locale.French, new ProcessInfo { Name = "Rouleau", Icon = "<sprite name=\"roll\">", }),
+                (Locale.German, new ProcessInfo { Name = "Rolle", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Spanish, new ProcessInfo { Name = "Rollo", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Polish, new ProcessInfo { Name = "Rolka", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Russian, new ProcessInfo { Name = "Рулон", Icon = "<sprite name=\"roll\">", }),
+                (Locale.PortugueseBrazil, new ProcessInfo { Name = "Rolo", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Japanese, new ProcessInfo { Name = "ロール", Icon = "<sprite name=\"roll\">", }),
+                (Locale.ChineseSimplified, new ProcessInfo { Name = "卷轴", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Korean, new ProcessInfo { Name = "롤", Icon = "<sprite name=\"roll\">", }),
+                (Locale.Turkish, new ProcessInfo { Name = "Rulo", Icon = "<sprite name=\"roll\">", }),
             };
         }
     }

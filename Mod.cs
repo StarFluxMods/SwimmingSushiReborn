@@ -21,6 +21,13 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 // https://free3d.com/3d-model/saltwater-aquarium-v1--172967.html
 // https://sketchfab.com/3d-models/animated-low-poly-fish-64adc2e5a4be471e8279532b9610c878
 
+/*
+ * IDEAS
+ *
+ * Having a Salmon sit in a Sink for a long enough period of time will trigger it to swim down the drain.
+ * Singing Fish on a Board "Don't Worry Be Happy"
+ */
+
 namespace SwimmingSushiReborn
 {
     public class Mod : BaseMod, IModSystem, IAutoRegisterAll
@@ -36,11 +43,12 @@ namespace SwimmingSushiReborn
 
         internal static AchievementsManager achievementsManager;
 
-        internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = false;
+        internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = true;
 
         internal static readonly string ACHIEVEMENT_SERVE_SALMONROLL = "ACHIEVEMENT_SERVE_SALMONROLL";
         internal static readonly string ACHIEVEMENT_SPECIAL_KNIFE = "ACHIEVEMENT_SPECIAL_KNIFE";
         internal static readonly string ACHIEVEMENT_BURNT_RICE = "ACHIEVEMENT_BURNT_RICE";
+        internal static readonly string ACHIEVEMENT_SLAP_FISH = "ACHIEVEMENT_SLAP_FISH";
 
         public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly())
         {
@@ -73,6 +81,7 @@ namespace SwimmingSushiReborn
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SERVE_SALMONROLL, "Salmon Sensations", "Serve a Salmon Roll to a customer.", Bundle.LoadAsset<Texture2D>("SalmonRollAchievementIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SPECIAL_KNIFE, "Specialty  Knife?", "Use a Fish Knife to get Roe from a Salmon", Bundle.LoadAsset<Texture2D>("SpecialityKnifeAchievementIcon")).SetHidden(true));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURNT_RICE, "You had so much time...", "Manage to burn a Rice Pot", Bundle.LoadAsset<Texture2D>("BurntRiceAchievementIcon")).SetHidden(true));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SLAP_FISH, "Okay! We get it!", "Slap a Mounted Fish 50 times in a single day", Bundle.LoadAsset<Texture2D>("BurntRiceAchievementIcon")).SetHidden(true));
             
             achievementsManager.Load();
             achievementsManager.Save();

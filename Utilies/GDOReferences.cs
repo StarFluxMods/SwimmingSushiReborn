@@ -99,12 +99,14 @@ namespace SwimmingSushiReborn.Utilies
         public static ItemGroup Onigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<Onigiri>().GameDataObject;
         public static ItemGroup PlatedGunkan => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedGunkan>().GameDataObject;
         public static ItemGroup PlatedNigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedNigiri>().GameDataObject;
+        public static ItemGroup PlatedChonkyNigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedChonkyNigiri>().GameDataObject;
         public static ItemGroup PlatedOnigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedOnigiri>().GameDataObject;
         public static ItemGroup PlatedSalmonRoll => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSalmonRoll>().GameDataObject;
         public static ItemGroup PlatedSashimi => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSashimi>().GameDataObject;
         public static ItemGroup RicePot => (ItemGroup)GDOUtils.GetCustomGameDataObject<RicePot>().GameDataObject;
         public static ItemGroup RiceSheet => (ItemGroup)GDOUtils.GetCustomGameDataObject<RiceSheet>().GameDataObject;
         public static ItemGroup UnrolledSalmon => (ItemGroup)GDOUtils.GetCustomGameDataObject<UnrolledSalmon>().GameDataObject;
+        public static ItemGroup ChonkyNigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<ChonkyNigiri>().GameDataObject;
 
         #endregion
 
