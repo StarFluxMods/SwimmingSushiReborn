@@ -15,7 +15,6 @@ using SwimmingSushiReborn.Utilies;
 using TMPro;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
-using Object = UnityEngine.Object;
 
 // https://poly.pizza/m/1O5Q4pE8X6e
 // https://poly.pizza/m/6Mkzj62qX2d
@@ -72,7 +71,7 @@ namespace SwimmingSushiReborn
 
             achievementsManager = new AchievementsManager(MOD_GUID, MOD_NAME);
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SERVE_SALMONROLL, "Salmon Sensations", "Serve a Salmon Roll to a customer.", Bundle.LoadAsset<Texture2D>("SalmonRollAchievementIcon")));
-            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SPECIAL_KNIFE, "Speciality Knife?", "Use a Fish Knife to get Roe from a Salmon", Bundle.LoadAsset<Texture2D>("SpecialityKnifeAchievementIcon")).SetHidden(true));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SPECIAL_KNIFE, "Specialty  Knife?", "Use a Fish Knife to get Roe from a Salmon", Bundle.LoadAsset<Texture2D>("SpecialityKnifeAchievementIcon")).SetHidden(true));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURNT_RICE, "You had so much time...", "Manage to burn a Rice Pot", Bundle.LoadAsset<Texture2D>("BurntRiceAchievementIcon")).SetHidden(true));
             
             achievementsManager.Load();
@@ -82,7 +81,7 @@ namespace SwimmingSushiReborn
             Bundle.LoadAllAssets<Sprite>();
             var spriteAsset = Bundle.LoadAsset<TMP_SpriteAsset>("RollIcon");
             TMP_Settings.defaultSpriteAsset.fallbackSpriteAssets.Add(spriteAsset);
-            spriteAsset.material = Object.Instantiate(TMP_Settings.defaultSpriteAsset.material);
+            spriteAsset.material = GameObject.Instantiate(TMP_Settings.defaultSpriteAsset.material);
             spriteAsset.material.mainTexture = Bundle.LoadAsset<Texture2D>("Tex_RollIcon");
             
             Events.BuildGameDataEvent += (sender, args) =>
