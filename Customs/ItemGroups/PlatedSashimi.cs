@@ -19,19 +19,11 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Items = new List<Item>
                 {
                     GDOReferences.Plate,
-                },
-                Min = 1,
-                Max = 1,
-                IsMandatory = true
-            },
-            new ItemGroup.ItemSet
-            {
-                Items = new List<Item>
-                {
                     GDOReferences.Sashimi,
                 },
-                Min = 1,
-                Max = 1,
+                Min = 2,
+                Max = 2,
+                IsMandatory = true
             }
         };
 

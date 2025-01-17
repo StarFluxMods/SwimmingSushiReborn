@@ -80,16 +80,18 @@ namespace SwimmingSushiReborn.Utilies
         public static Item CookedRice => (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject;
         public static Item CookedRicePot => (Item)GDOUtils.GetCustomGameDataObject<CookedRicePot>().GameDataObject;
         public static Item FishKnife => (Item)GDOUtils.GetCustomGameDataObject<FishKnife>().GameDataObject;
-        public static Item PortionedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedSalmonRoll>().GameDataObject;
-        public static Item RiceBall => (Item)GDOUtils.GetCustomGameDataObject<RiceBall>().GameDataObject;
         public static Item Ginger => (Item)GDOUtils.GetCustomGameDataObject<Ginger>().GameDataObject;
         public static Item GingerPortion => (Item)GDOUtils.GetCustomGameDataObject<GingerPortion>().GameDataObject;
+        public static Item PortionedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedSalmonRoll>().GameDataObject;
+        public static Item RiceBall => (Item)GDOUtils.GetCustomGameDataObject<RiceBall>().GameDataObject;
         public static Item Roe => (Item)GDOUtils.GetCustomGameDataObject<Roe>().GameDataObject;
         public static Item RolledSalmon => (Item)GDOUtils.GetCustomGameDataObject<RolledSalmon>().GameDataObject;
         public static Item Salmon => (Item)GDOUtils.GetCustomGameDataObject<Salmon>().GameDataObject;
         public static Item SalmonFillet => (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject;
         public static Item SalmonWithRoe => (Item)GDOUtils.GetCustomGameDataObject<SalmonWithRoe>().GameDataObject;
         public static Item Sashimi => (Item)GDOUtils.GetCustomGameDataObject<Sashimi>().GameDataObject;
+        public static Item Wasabi => (Item)GDOUtils.GetCustomGameDataObject<Wasabi>().GameDataObject;
+        public static Item WasabiStem => (Item)GDOUtils.GetCustomGameDataObject<WasabiStem>().GameDataObject;
 
         #endregion
 
@@ -123,6 +125,8 @@ namespace SwimmingSushiReborn.Utilies
         public static Dish DishSalmonRoll => (Dish)GDOUtils.GetCustomGameDataObject<DishSalmonRoll>().GameDataObject;
         public static Dish DishSashimi => (Dish)GDOUtils.GetCustomGameDataObject<DishSashimi>().GameDataObject;
         public static Dish DishSoySauce => (Dish)GDOUtils.GetCustomGameDataObject<DishSoySauce>().GameDataObject;
+        public static Dish SideGinger => (Dish)GDOUtils.GetCustomGameDataObject<SideGinger>().GameDataObject;
+        public static Dish SideWasabi => (Dish)GDOUtils.GetCustomGameDataObject<SideWasabi>().GameDataObject;
 
         #endregion
 
@@ -139,6 +143,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Appliance FishDisplayBoard => (Appliance)GDOUtils.GetCustomGameDataObject<FishDisplayBoard>().GameDataObject;
         public static Appliance FishKnifeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<FishKnifeProvider>().GameDataObject;
         public static Appliance FishTank => (Appliance)GDOUtils.GetCustomGameDataObject<FishTank>().GameDataObject;
+        public static Appliance GingerProvider => (Appliance)GDOUtils.GetCustomGameDataObject<GingerProvider>().GameDataObject;
         public static Appliance HangingLamp => (Appliance)GDOUtils.GetCustomGameDataObject<HangingLamp>().GameDataObject;
         public static Appliance NoriProvider => (Appliance)GDOUtils.GetCustomGameDataObject<NoriProvider>().GameDataObject;
         public static Appliance RoeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<RoeProvider>().GameDataObject;
@@ -146,6 +151,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Appliance SalmonProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SalmonProvider>().GameDataObject;
         public static Appliance SushiNeonSign => (Appliance)GDOUtils.GetCustomGameDataObject<SushiNeonSign>().GameDataObject;
         public static Appliance SushiTextNeonSign => (Appliance)GDOUtils.GetCustomGameDataObject<SushiTextNeonSign>().GameDataObject;
+        public static Appliance WasabiProvider => (Appliance)GDOUtils.GetCustomGameDataObject<WasabiProvider>().GameDataObject;
 
         #endregion
     }

@@ -176,6 +176,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo { Name = "생강", Description = "생강을 사이드 메뉴로 추가", FlavourText = "펀치력이 있는 입천장 클렌저." }),
                 (Locale.Turkish, new UnlockInfo { Name = "Zencefil", Description = "Yan Olarak Zencefil Ekler", FlavourText = "Güçlü bir damak temizleyicisi." }),
             };
+            
+            public static List<(Locale, UnlockInfo)> Wasabi => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Wasabi", Description = "Adds Wasabi as a Side", FlavourText = "A fiery kick in a tiny dollop."}),
+                (Locale.English, new UnlockInfo{Name = "Wasabi", Description = "Adds Wasabi as a Side", FlavourText = "A fiery kick in a tiny dollop."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", Description = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Wasabi", Description = "Ajoute du wasabi en accompagnement", FlavourText = "Un coup de fouet dans une petite cuillerée."}),
+                (Locale.German, new UnlockInfo{Name = "Wasabi", Description = "Fügt Wasabi als Beilage hinzu", FlavourText = "Ein feuriger Kick in einer winzigen Portion."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Wasabi", Description = "Añade Wasabi como guarnición", FlavourText = "Una patada ardiente en una pequeña porción."}),
+                (Locale.Polish, new UnlockInfo{Name = "Wasabi", Description = "Dodaje wasabi jako dodatek", FlavourText = "Ognisty kop w małej porcji."}),
+                (Locale.Russian, new UnlockInfo{Name = "Васаби", Description = "Добавляет васаби в качестве гарнира", FlavourText = "Жаркий удар в крошечной ложечке."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Wasabi", Description = "Adiciona wasabi como acompanhamento", FlavourText = "Um chute ardente em uma pequena porção."}),
+                (Locale.Japanese, new UnlockInfo{Name = "わさび", Description = "わさびをサイドメニューに加える", FlavourText = "小さな一滴の中に、燃えるようなキックがある。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "山葵", Description = "添加山葵作为配菜", FlavourText = "小小一勺，火辣辣的。"}),
+                (Locale.Korean, new UnlockInfo{Name = "와사비", Description = "와사비를 사이드 메뉴로 추가", FlavourText = "작은 덩어리에서 불 같은 킥을 날립니다."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Wasabi", Description = "Wasabi'yi Yan Olarak Ekler", FlavourText = "Küçük bir topakta ateşli bir tekme."}),
+            };
         }
 
         public static class Recipes
@@ -349,6 +366,23 @@ namespace SwimmingSushiReborn.Utilies
                 { Locale.Korean, "요청이 있으면 다진 생강을 접시에 추가합니다." },
                 { Locale.Turkish, "İstenildiğinde Tabağa Doğranmış Zencefil Ekleyin." },
             };
+            
+            public static Dictionary<Locale, string> Wasabi => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Add Chopped Wasabi to a Plate when requested."},
+                {Locale.English, "Add Chopped Wasabi to a Plate when requested."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Ajouter du Wasabi haché à l'assiette sur demande."},
+                {Locale.German, "Auf Wunsch gehackten Wasabi auf den Teller geben."},
+                {Locale.Spanish, "Añada Wasabi picado al plato cuando lo solicite."},
+                {Locale.Polish, "Na życzenie do talerza można dodać posiekane wasabi."},
+                {Locale.Russian, "По желанию добавьте в тарелку измельченный васаби."},
+                {Locale.PortugueseBrazil, "Adicione Wasabi picado em um prato quando solicitado."},
+                {Locale.Japanese, "リクエストに応じて、皿に刻みわさびを加える。"},
+                {Locale.ChineseSimplified, "如有要求，可在餐盘中加入切碎的芥末。"},
+                {Locale.Korean, "요청이 있으면 다진 와사비를 접시에 추가합니다."},
+                {Locale.Turkish, "İstenildiğinde Tabağa Kıyılmış Wasabi ekleyin."},
+            };
         }
 
         public static class Appliances
@@ -385,6 +419,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.ChineseSimplified, new ApplianceInfo { Name = "紫菜", Description = "提供紫菜" }),
                 (Locale.Korean, new ApplianceInfo { Name = "Nori", Description = "노리 제공" }),
                 (Locale.Turkish, new ApplianceInfo { Name = "Nori", Description = "Nori Sağlar" }),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> GingerProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Ginger", Description = "Provides Ginger"}),
+                (Locale.English, new ApplianceInfo{Name = "Ginger", Description = "Provides Ginger"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Gingembre", Description = "Apporte du gingembre"}),
+                (Locale.German, new ApplianceInfo{Name = "Ingwer", Description = "Liefert Ingwer"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Jengibre", Description = "Proporciona jengibre"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Imbir", Description = "Zapewnia imbir"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Имбирь", Description = "Обеспечивает имбирь"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Gengibre", Description = "Fornece gengibre"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "ジンジャー", Description = "ジンジャー"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "姜", Description = "提供生姜"}),
+                (Locale.Korean, new ApplianceInfo{Name = "생강", Description = "생강 제공"}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Zencefil", Description = "Zencefil Sağlar"}),
             };
 
             public static List<(Locale, ApplianceInfo)> SalmonProvider => new List<(Locale, ApplianceInfo)>
@@ -487,6 +538,57 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.ChineseSimplified, new ApplianceInfo { Name = "骑鱼", Description = "让你的地方看起来更酷。" }),
                 (Locale.Korean, new ApplianceInfo { Name = "기마 물고기", Description = "공간을 더 멋지게 꾸미는 데 푹 빠졌습니다." }),
                 (Locale.Turkish, new ApplianceInfo { Name = "Atlı Balık", Description = "Evinizi daha havalı göstermeye odaklanın." }),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> NeonSign => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Neon Sign", Description = "Very helpful if customers don't know what to do"}),
+                (Locale.English, new ApplianceInfo{Name = "Neon Sign", Description = "Very helpful if customers don't know what to do"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Panneau néon", Description = "Très utile si les clients ne savent pas quoi faire"}),
+                (Locale.German, new ApplianceInfo{Name = "Neon-Schild", Description = "Sehr hilfreich, wenn Kunden nicht wissen, was sie tun sollen"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Cartel de neón", Description = "Muy útil si los clientes no saben qué hacer"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Neon Sign", Description = "Bardzo pomocne, jeśli klienci nie wiedzą, co robić"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Неоновый знак", Description = "Очень полезно, если клиенты не знают, что делать"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Sinal de néon", Description = "Muito útil se os clientes não souberem o que fazer"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "ネオンサイン", Description = "どうすればいいのかわからないときにとても役に立つ"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "霓虹标志", Description = "如果客户不知道该怎么做，非常有帮助"}),
+                (Locale.Korean, new ApplianceInfo{Name = "네온 사인", Description = "고객이 무엇을 해야 할지 모르는 경우 매우 유용합니다."}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Neon Tabela", Description = "Müşteriler ne yapacaklarını bilmiyorsa çok yardımcı olur"}),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> HangingLamp => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Hanging Lamp", Description = "Hangs like a haiku, glows like a sunrise."}),
+                (Locale.English, new ApplianceInfo{Name = "Hanging Lamp", Description = "Hangs like a haiku, glows like a sunrise."}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Lampe suspendue", Description = "Il est suspendu comme un haïku, il brille comme un lever de soleil."}),
+                (Locale.German, new ApplianceInfo{Name = "Hängelampe", Description = "Hängt wie ein Haiku, leuchtet wie ein Sonnenaufgang."}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Lámpara colgante", Description = "Cuelga como un haiku, brilla como un amanecer."}),
+                (Locale.Polish, new ApplianceInfo{Name = "Lampa wisząca", Description = "Wisi jak haiku, świeci jak wschód słońca."}),
+                (Locale.Russian, new ApplianceInfo{Name = "Подвесная лампа", Description = "Висит, как хайку, сияет, как рассвет."}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Lâmpada suspensa", Description = "Pendurado como um haiku, brilha como um nascer do sol."}),
+                (Locale.Japanese, new ApplianceInfo{Name = "吊りランプ", Description = "俳句のように吊るされ、朝日のように輝く。"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "吊灯", Description = "像俳句一样悬挂，像日出一样闪耀。"}),
+                (Locale.Korean, new ApplianceInfo{Name = "행잉 램프", Description = "하이쿠처럼 매달려 있고 일출처럼 빛납니다."}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Asma Lamba", Description = "Bir haiku gibi asılı, bir gün doğumu gibi parlıyor."}),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> WasabiProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Wasabi Stem", Description = "Provides Wasabi Stem"}),
+                (Locale.English, new ApplianceInfo{Name = "Wasabi Stem", Description = "Provides Wasabi Stem"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Tige de Wasabi", Description = "Fournit des tiges de Wasabi"}),
+                (Locale.German, new ApplianceInfo{Name = "Wasabi-Stängel", Description = "Bietet Wasabi-Stängel"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Tallo Wasabi", Description = "Proporciona tallo de wasabi"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Łodyga wasabi", Description = "Zapewnia łodygę wasabi"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Стебель васаби", Description = "Предоставляет стебель васаби"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Caule de wasabi", Description = "Fornece haste de wasabi"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "茎わさび", Description = "茎わさびを提供"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "山葵茎", Description = "提供山葵梗"}),
+                (Locale.Korean, new ApplianceInfo{Name = "와사비 줄기", Description = "와사비 줄기 제공"}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Wasabi Kök", Description = "Wasabi Sapını Sağlar"}),
             };
         }
 

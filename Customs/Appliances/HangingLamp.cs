@@ -16,7 +16,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         public override ShoppingTags ShoppingTags => ShoppingTags.Decoration;
         public override PriceTier PriceTier => PriceTier.Free;
         public override OccupancyLayer Layer => OccupancyLayer.Ceiling;
-        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.FishTank;
+        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.HangingLamp;
 
         public override void OnRegister(Appliance gameDataObject)
         {

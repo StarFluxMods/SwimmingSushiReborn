@@ -19,20 +19,12 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Items = new List<Item>
                 {
                     GDOReferences.Plate,
-                },
-                Min = 1,
-                Max = 1,
-                IsMandatory = true
-            },
-            new ItemGroup.ItemSet
-            {
-                Items = new List<Item>
-                {
                     GDOReferences.Onigiri,
                 },
-                Min = 1,
-                Max = 1,
-            }
+                Min = 2,
+                Max = 2,
+                IsMandatory = true
+            },
         };
 
         public override ItemValue ItemValue => ItemValue.SideMedium;

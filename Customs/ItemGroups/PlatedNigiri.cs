@@ -20,9 +20,10 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Items = new List<Item>
                 {
                     GDOReferences.Plate,
+                    GDOReferences.Nigiri,
                 },
-                Min = 1,
-                Max = 1,
+                Min = 2,
+                Max = 2,
                 IsMandatory = true
             },
             new ItemGroup.ItemSet
@@ -30,10 +31,9 @@ namespace SwimmingSushiReborn.Customs.ItemGroups
                 Items = new List<Item>
                 {
                     GDOReferences.Nigiri,
-                    GDOReferences.Nigiri,
                 },
-                Min = 1,
-                Max = 2,
+                Min = 0,
+                Max = 1,
             }
         };
 

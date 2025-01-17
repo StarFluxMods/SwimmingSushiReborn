@@ -22,5 +22,7 @@ namespace SwimmingSushiReborn.Customs.Items
                 Result = GDOReferences.GingerPortion
             }
         };
+
+        public override Appliance DedicatedProvider => GDOReferences.GingerProvider;
     }
 }

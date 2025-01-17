@@ -13,5 +13,6 @@ namespace SwimmingSushiReborn.Customs.Items
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("GingerPortion").AssignMaterialsByNames();
         public override ItemStorage ItemStorageFlags => ItemStorage.StackableFood;
         public override bool IsMergeableSide => true;
+        public override ItemValue ItemValue => ItemValue.SideSmall;
     }
 }
