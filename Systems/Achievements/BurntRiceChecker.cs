@@ -10,6 +10,7 @@ namespace SwimmingSushiReborn.Systems.Achievements
     public class BurntRiceChecker : RestaurantSystem, IModSystem
     {
         private EntityQuery _Items;
+
         protected override void Initialise()
         {
             base.Initialise();

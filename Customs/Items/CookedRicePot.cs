@@ -19,7 +19,7 @@ namespace SwimmingSushiReborn.Customs.Items
         {
             GDOReferences.Pot
         };
-        
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess

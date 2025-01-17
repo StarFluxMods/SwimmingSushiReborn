@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using HarmonyLib;
 using Kitchen.Components;
 using KitchenData;
 using KitchenLib.Customs;
@@ -19,6 +18,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         public override ShoppingTags ShoppingTags => ShoppingTags.Decoration;
         public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.FishDisplayBoard;
         public override PriceTier PriceTier => PriceTier.Free;
+
         public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
         {
             new CFishDisplayBoardView

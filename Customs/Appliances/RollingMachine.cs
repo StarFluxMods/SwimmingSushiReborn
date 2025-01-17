@@ -29,6 +29,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         {
             new CItemHolder()
         };
+
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
 
@@ -38,6 +39,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         {
             GDOReferences.Roll
         };
+
         public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.RollingMachine;
 
         public override void OnRegister(Appliance gameDataObject)

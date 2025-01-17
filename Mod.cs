@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using KitchenLib;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
@@ -21,6 +20,7 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 // https://poly.pizza/m/6Mkzj62qX2d
 // https://free3d.com/3d-model/saltwater-aquarium-v1--172967.html
 // https://www.freepik.com/free-vector/branch-cherry-blossom-background_3917958.htm#fromView=keyword&page=1&position=2&uuid=e7d99d62-a61f-4ce9-8178-94ea166d8f29&new_detail=true
+// https://sketchfab.com/3d-models/ginger-root-14d7deb215f84f6ea2c10a9da12e60fd
 
 namespace SwimmingSushiReborn
 {
@@ -28,7 +28,7 @@ namespace SwimmingSushiReborn
     {
         public const string MOD_GUID = "com.starfluxgames.swimmingsushireborn";
         public const string MOD_NAME = "Swimming Sushi Reborn";
-        public const string MOD_VERSION = "0.3.0";
+        public const string MOD_VERSION = "0.1.0";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 
@@ -64,7 +64,6 @@ namespace SwimmingSushiReborn
 
         protected override void OnUpdate()
         {
-            
         }
 
         protected override void OnPostActivate(KitchenMods.Mod mod)
@@ -78,17 +77,17 @@ namespace SwimmingSushiReborn
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURNT_RICE, "You had so much time...", "Manage to burn a Rice Pot", Bundle.LoadAsset<Texture2D>("BurntRicePotIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SLAP_FISH, "Okay! We get it!", "Slap a Mounted Fish 100 times in a single day", Bundle.LoadAsset<Texture2D>("FishSlapIcon")).SetHidden(true));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SINK_SALMON, "Where'd It Go?", "Leave a Salmon in the sink for too long.", Bundle.LoadAsset<Texture2D>("SalmonSinkIcon")).SetHidden(true));
-            
+
             achievementsManager.Load();
             achievementsManager.Save();
-            
+
             Bundle.LoadAllAssets<Texture2D>();
             Bundle.LoadAllAssets<Sprite>();
             var spriteAsset = Bundle.LoadAsset<TMP_SpriteAsset>("RollIcon");
             TMP_Settings.defaultSpriteAsset.fallbackSpriteAssets.Add(spriteAsset);
             spriteAsset.material = GameObject.Instantiate(TMP_Settings.defaultSpriteAsset.material);
             spriteAsset.material.mainTexture = Bundle.LoadAsset<Texture2D>("Tex_RollIcon");
-            
+
             Events.BuildGameDataEvent += (sender, args) =>
             {
                 foreach (Appliance appliance in args.gamedata.Get<Appliance>())
@@ -109,8 +108,8 @@ namespace SwimmingSushiReborn
             };
 
             AddOptionalCraneCosmetics();
-            
-            
+
+
             // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
         }
 
@@ -121,26 +120,26 @@ namespace SwimmingSushiReborn
                 var craneCosmeticTypeEnum = AppDomain.CurrentDomain.GetAssemblies()
                     .SelectMany(assembly => assembly.GetTypes())
                     .FirstOrDefault(type => type.Name == "CraneCosmeticType");
-                
+
                 AddGameDataObjectAutomatically(DynamicGDOBuilder.CreateDynamicGDO(type, "NigiriCraneHead", new Dictionary<(Type, string), object>
                 {
                     { (craneCosmeticTypeEnum, "CosmeticType"), 1 },
-                    { (typeof(GameObject), "Prefab"),  Bundle.LoadAsset<GameObject>("NigiriCraneHead").AssignMaterialsByNames()},
-                    { (typeof(bool), "HideOriginal"),  true}
+                    { (typeof(GameObject), "Prefab"), Bundle.LoadAsset<GameObject>("NigiriCraneHead").AssignMaterialsByNames() },
+                    { (typeof(bool), "HideOriginal"), true }
                 }));
-                
+
                 AddGameDataObjectAutomatically(DynamicGDOBuilder.CreateDynamicGDO(type, "NigiriChain", new Dictionary<(Type, string), object>
                 {
                     { (craneCosmeticTypeEnum, "CosmeticType"), 2 },
-                    { (typeof(GameObject), "Prefab"),  Bundle.LoadAsset<GameObject>("NigiriChain").AssignMaterialsByNames()},
-                    { (typeof(bool), "HideOriginal"),  true}
+                    { (typeof(GameObject), "Prefab"), Bundle.LoadAsset<GameObject>("NigiriChain").AssignMaterialsByNames() },
+                    { (typeof(bool), "HideOriginal"), true }
                 }));
-                
+
                 AddGameDataObjectAutomatically(DynamicGDOBuilder.CreateDynamicGDO(type, "CrabCrane", new Dictionary<(Type, string), object>
                 {
                     { (craneCosmeticTypeEnum, "CosmeticType"), 3 },
-                    { (typeof(GameObject), "Prefab"),  Bundle.LoadAsset<GameObject>("CrabCrane").AssignMaterialsByNames()},
-                    { (typeof(bool), "HideOriginal"),  true}
+                    { (typeof(GameObject), "Prefab"), Bundle.LoadAsset<GameObject>("CrabCrane").AssignMaterialsByNames() },
+                    { (typeof(bool), "HideOriginal"), true }
                 }));
 
                 return;

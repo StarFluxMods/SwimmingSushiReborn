@@ -5,6 +5,5 @@ namespace SwimmingSushiReborn.Components
 {
     public struct CCompletedAchievementEntity : IComponentData, IModComponent
     {
-        
     }
 }

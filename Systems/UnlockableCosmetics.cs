@@ -16,7 +16,7 @@ namespace SwimmingSushiReborn.Systems
         };
 
         public static UnlockableCosmetics instance;
-        
+
         protected override void Initialise()
         {
             base.Initialise();
@@ -26,7 +26,6 @@ namespace SwimmingSushiReborn.Systems
 
         protected override void OnUpdate()
         {
-            
         }
 
         public void SetupCosmetics()

@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using HarmonyLib;
 using Kitchen;
-using KitchenLib.Views;
 using KitchenMods;
 using SwimmingSushiReborn.Components;
 using SwimmingSushiReborn.Utilies;
@@ -17,8 +15,9 @@ namespace SwimmingSushiReborn.Systems.Achievements
 
         private static Dictionary<int, string> DishAchievementKeypair = new Dictionary<int, string>
         {
-            {GDOReferences.PlatedSalmonRoll.ID, Mod.ACHIEVEMENT_SERVE_SALMONROLL}
+            { GDOReferences.PlatedSalmonRoll.ID, Mod.ACHIEVEMENT_SERVE_SALMONROLL }
         };
+
         protected override void Initialise()
         {
             base.Initialise();

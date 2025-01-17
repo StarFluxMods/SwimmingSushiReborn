@@ -15,6 +15,7 @@ namespace SwimmingSushiReborn.Systems
             base.Initialise();
             _FishBoards = base.GetEntityQuery(typeof(CFishDisplayBoardView), typeof(CLinkedView));
         }
+
         protected override void OnUpdate()
         {
             using (NativeArray<Entity> FishBoards = _FishBoards.ToEntityArray(Allocator.Temp))

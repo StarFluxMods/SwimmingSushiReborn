@@ -12,10 +12,12 @@ namespace SwimmingSushiReborn.Customs.Appliances
     {
         public override string UniqueNameID => "SushiNeonSign";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("SushiNeonSign").AssignMaterialsByNames();
+
         public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
         {
             new CMustHaveWall()
         };
+
         public override bool IsPurchasable => false;
         public override PriceTier PriceTier => PriceTier.Free;
         public override ShoppingTags ShoppingTags => ShoppingTags.Decoration;

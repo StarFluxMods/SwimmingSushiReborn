@@ -21,7 +21,7 @@ namespace SwimmingSushiReborn.Systems
             _CurrentMenuItems = base.GetEntityQuery(typeof(CMenuItem), typeof(CAvailableIngredient));
             _ShopBuilderOptions = base.GetEntityQuery(typeof(CShopBuilderOption));
         }
-        
+
         private static Dictionary<int, List<Appliance>> Appliances = new Dictionary<int, List<Appliance>>
         {
             {
@@ -35,6 +35,7 @@ namespace SwimmingSushiReborn.Systems
                 }
             }
         };
+
         private readonly Dictionary<int, Entity> BuilderOptions = new Dictionary<int, Entity>();
 
         protected override void OnUpdate()
@@ -55,7 +56,7 @@ namespace SwimmingSushiReborn.Systems
                         if (BuilderOptions.ContainsKey(cShopBuilderOption.Appliance)) continue;
                         BuilderOptions.Add(cShopBuilderOption.Appliance, ShopBuilderOption);
                     }
-                    
+
                     foreach (Appliance appliance in Appliances.Keys.SelectMany(id => Appliances[id]))
                     {
                         if (!BuilderOptions.ContainsKey(appliance.ID)) continue;
@@ -73,10 +74,9 @@ namespace SwimmingSushiReborn.Systems
                         AddOption(appliance);
                     }
                 }
-                
             }
         }
-        
+
         private void AddOption(Appliance app)
         {
             Entity entity = EntityManager.CreateEntity(typeof(CShopBuilderOption));

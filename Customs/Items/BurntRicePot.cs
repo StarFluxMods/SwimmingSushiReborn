@@ -12,7 +12,7 @@ namespace SwimmingSushiReborn.Customs.Items
         public override string UniqueNameID => "BurntRicePot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("BurntRicePot").AssignMaterialsByNames();
         public override bool IsIndisposable => true;
-        
+
         public override List<Item.ItemProcess> Processes => new()
         {
             new Item.ItemProcess
