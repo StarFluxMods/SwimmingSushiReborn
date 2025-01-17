@@ -2,7 +2,9 @@
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
+using SwimmingSushiReborn.Components;
 using SwimmingSushiReborn.Utilies;
+using SwimmingSushiReborn.Views;
 using UnityEngine;
 
 namespace SwimmingSushiReborn.Customs.Items
@@ -22,6 +24,21 @@ namespace SwimmingSushiReborn.Customs.Items
             }
         };
 
+        public override List<IItemProperty> Properties => new List<IItemProperty>
+        {
+            new CSalmon
+            {
+                IsInSink = false
+            }
+        };
+
         public override Appliance DedicatedProvider => GDOReferences.SalmonProvider;
+
+        public override void OnRegister(Item gameDataObject)
+        {
+            base.OnRegister(gameDataObject);
+            SalmonView salmonView = gameDataObject.Prefab.AddComponent<SalmonView>();
+            salmonView.animator = gameDataObject.Prefab.GetComponentInChildren<Animator>();
+        }
     }
 }

@@ -27,6 +27,11 @@ namespace SwimmingSushiReborn.Systems
             {
                 GDOReferences.DishSalmonRoll.ID, new List<Appliance>
                 {
+                    GDOReferences.FishTank,
+                    GDOReferences.FishDisplayBoard,
+                    GDOReferences.HangingLamp,
+                    GDOReferences.SushiNeonSign,
+                    GDOReferences.SushiTextNeonSign
                 }
             }
         };

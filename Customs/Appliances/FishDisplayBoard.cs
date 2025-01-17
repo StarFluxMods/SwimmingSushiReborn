@@ -18,6 +18,7 @@ namespace SwimmingSushiReborn.Customs.Appliances
         public override bool IsPurchasable => false;
         public override ShoppingTags ShoppingTags => ShoppingTags.Decoration;
         public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.FishDisplayBoard;
+        public override PriceTier PriceTier => PriceTier.Free;
         public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
         {
             new CFishDisplayBoardView
