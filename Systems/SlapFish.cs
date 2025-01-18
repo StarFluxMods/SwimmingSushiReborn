@@ -21,7 +21,7 @@ namespace SwimmingSushiReborn.Systems
 
             if (cFishDisplayBoardView.interactCount >= 100)
             {
-                Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SLAP_FISH);
+                // Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SLAP_FISH);
                 cFishDisplayBoardView.interactCount = 0;
             }
 

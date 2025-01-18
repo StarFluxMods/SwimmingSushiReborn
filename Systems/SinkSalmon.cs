@@ -59,7 +59,7 @@ namespace SwimmingSushiReborn.Systems
                                     {
                                         Unset<CItemHolderPreventTransfer>(cHeldBy.Holder);
                                         EntityManager.DestroyEntity(Salmon);
-                                        Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SINK_SALMON);
+                                        // Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SINK_SALMON);
                                     }
                                 }
                                 else

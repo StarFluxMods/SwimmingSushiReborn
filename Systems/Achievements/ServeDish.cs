@@ -34,7 +34,7 @@ namespace SwimmingSushiReborn.Systems.Achievements
                     foreach (var cWaitingForItem in buffer.Where(cWaitingForItem => DishAchievementKeypair.ContainsKey(cWaitingForItem.ItemID) && cWaitingForItem.Satisfied))
                     {
                         EntityManager.AddComponent<CCompletedAchievementEntity>(WaitingForItem);
-                        Mod.achievementsManager.UnlockAchievement(DishAchievementKeypair[cWaitingForItem.ItemID]);
+                        // Mod.achievementsManager.UnlockAchievement(DishAchievementKeypair[cWaitingForItem.ItemID]);
                         return;
                     }
                 }
