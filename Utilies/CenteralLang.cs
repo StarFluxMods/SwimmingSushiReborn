@@ -23,6 +23,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo { Name = "연어 롤", Description = "연어 롤을 메인으로 추가", FlavourText = "포세이돈도 인정할 만큼 신선한 생선." }),
                 (Locale.Turkish, new UnlockInfo { Name = "Somon Rulo", Description = "Ana Yemek Olarak Somon Ruloları Ekler", FlavourText = "Balık o kadar taze ki, Poseidon bile onaylardı." }),
             };
+            
+            public static List<(Locale, UnlockInfo)> CrabRoll => new List<(Locale, UnlockInfo)>
+{
+    (Locale.Default, new UnlockInfo{Name = "Crab Roll", Description = "Adds Crab Rolls as a Main", FlavourText = "Crab your chopsticks and dig in!"}),
+    (Locale.English, new UnlockInfo{Name = "Crab Roll", Description = "Adds Crab Rolls as a Main", FlavourText = "Crab your chopsticks and dig in!"}),
+    (Locale.BlankText, new UnlockInfo{Name = "", Description = "", FlavourText = ""}),
+    (Locale.French, new UnlockInfo{Name = "Rouleau de crabe", Description = "Ajout de rouleaux de crabe comme plat principal", FlavourText = "Mettez vos baguettes dans un crabe et plongez dans l'eau !"}),
+    (Locale.German, new UnlockInfo{Name = "Krabbenrolle", Description = "Fügt Krabbenröllchen als Hauptgericht hinzu", FlavourText = "Nehmen Sie Ihre Stäbchen und greifen Sie zu!"}),
+    (Locale.Spanish, new UnlockInfo{Name = "Rollo de cangrejo", Description = "Añade rollos de cangrejo como plato principal", FlavourText = "Coge los palillos y ¡a comer!"}),
+    (Locale.Polish, new UnlockInfo{Name = "Bułka z krabem", Description = "Dodaje Crab Rolls jako danie główne", FlavourText = "Chwyć pałeczki i zagłęb się!"}),
+    (Locale.Russian, new UnlockInfo{Name = "Крабовый ролл", Description = "Добавляет крабовые роллы в качестве основного блюда", FlavourText = "Берите палочки и приступайте!"}),
+    (Locale.PortugueseBrazil, new UnlockInfo{Name = "Enrolado de caranguejo", Description = "Adiciona rolinhos de caranguejo como prato principal", FlavourText = "Pegue seus pauzinhos e comece a comer!"}),
+    (Locale.Japanese, new UnlockInfo{Name = "蟹ロール", Description = "メインにカニロールを追加", FlavourText = "お箸を持ち、食べよう！"}),
+    (Locale.ChineseSimplified, new UnlockInfo{Name = "蟹卷", Description = "添加蟹肉卷作为主菜", FlavourText = "拿起筷子，大快朵颐！"}),
+    (Locale.Korean, new UnlockInfo{Name = "크랩 롤", Description = "크랩롤을 메인으로 추가", FlavourText = "젓가락을 들고 맛있게 드세요!"}),
+    (Locale.Turkish, new UnlockInfo{Name = "Yengeç Rulo", Description = "Yengeç Rulolarını Ana Yemek Olarak Ekliyor", FlavourText = "Çubuklarınızı alın ve yumulun!"}),
+};
 
             public static List<(Locale, UnlockInfo)> Nigiri => new List<(Locale, UnlockInfo)>
             {
@@ -193,6 +210,23 @@ namespace SwimmingSushiReborn.Utilies
                 (Locale.Korean, new UnlockInfo{Name = "와사비", Description = "와사비를 사이드 메뉴로 추가", FlavourText = "작은 덩어리에서 불 같은 킥을 날립니다."}),
                 (Locale.Turkish, new UnlockInfo{Name = "Wasabi", Description = "Wasabi'yi Yan Olarak Ekler", FlavourText = "Küçük bir topakta ateşli bir tekme."}),
             };
+            
+            public static List<(Locale, UnlockInfo)> RecipeMayonnaise => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Mayonnaise", Description = "", FlavourText = ""}),
+                (Locale.English, new UnlockInfo{Name = "Mayonnaise", Description = "", FlavourText = ""}),
+                (Locale.BlankText, new UnlockInfo{Name = "", Description = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Mayonnaise", Description = "", FlavourText = ""}),
+                (Locale.German, new UnlockInfo{Name = "Mayonnaise", Description = "", FlavourText = ""}),
+                (Locale.Spanish, new UnlockInfo{Name = "Mayonesa", Description = "", FlavourText = ""}),
+                (Locale.Polish, new UnlockInfo{Name = "Majonez", Description = "", FlavourText = ""}),
+                (Locale.Russian, new UnlockInfo{Name = "Майонез", Description = "", FlavourText = ""}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Maionese", Description = "", FlavourText = ""}),
+                (Locale.Japanese, new UnlockInfo{Name = "マヨネーズ", Description = "", FlavourText = ""}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "蛋黄酱", Description = "", FlavourText = ""}),
+                (Locale.Korean, new UnlockInfo{Name = "마요네즈", Description = "", FlavourText = ""}),
+                (Locale.Turkish, new UnlockInfo{Name = "Mayonez", Description = "", FlavourText = ""}),
+            };
         }
 
         public static class Recipes
@@ -212,6 +246,23 @@ namespace SwimmingSushiReborn.Utilies
                 { Locale.ChineseSimplified, "将米和水放入锅中煮。分装在紫菜片上，加入切碎的三文鱼和牛油果，卷起，切碎，分装。" },
                 { Locale.Korean, "냄비에 쌀과 물을 넣고 끓입니다. 김 시트에 나누어 담고 다진 연어와 아보카도를 넣고 굴려서 잘게 자른 후 나누어 담습니다." },
                 { Locale.Turkish, "Pirinç ve Suyu bir tencerede karıştırın ve pişirin. Nori yaprağına paylaştırın ve doğranmış Somon ve Avokado ekleyin, Yuvarlayın, Doğrayın ve Paylaştırın." },
+            };
+            
+            public static Dictionary<Locale, string> CrabRoll => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Combine Rice and Water in a Pot and Cook. Portion onto a Nori sheet, and add chopped Crab and Mayonnaise, Roll, Chop, and Portion."},
+                {Locale.English, "Combine Rice and Water in a Pot and Cook. Portion onto a Nori sheet, and add chopped Crab and Mayonnaise, Roll, Chop, and Portion."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Mélanger le riz et l'eau dans une casserole et faire cuire. Répartir sur une feuille de nori, ajouter du crabe haché et de la mayonnaise, rouler, hacher et répartir."},
+                {Locale.German, "Reis und Wasser in einem Topf vermengen und kochen. Auf ein Nori-Blatt portionieren, gehackte Krabben und Mayonnaise hinzufügen, rollen, hacken und portionieren."},
+                {Locale.Spanish, "Combine el Arroz y el Agua en una Olla y Cocine. Porcionar en una hoja de Nori, y añadir Cangrejo picado y Mayonesa, Enrollar, Picar, y Porcionar."},
+                {Locale.Polish, "Połącz ryż i wodę w garnku i ugotuj. Przełożyć na arkusz nori, dodać posiekany krab i majonez, zwinąć, posiekać i przełożyć."},
+                {Locale.Russian, "Соедините рис и воду в кастрюле и варите. Выложите порционно на лист нори, добавьте измельченный краб и майонез, сверните, нарежьте и выложите порционно."},
+                {Locale.PortugueseBrazil, "Combine arroz e água em uma panela e cozinhe. Distribua em uma folha de Nori e adicione caranguejo picado e maionese, enrole, corte e distribua."},
+                {Locale.Japanese, "米と水を鍋に入れて炊く。海苔の上に盛り付け、刻んだカニとマヨネーズを加え、巻いて刻んで盛り付ける。"},
+                {Locale.ChineseSimplified, "将米和水放入锅中煮。分装在紫菜片上，加入切碎的蟹肉和蛋黄酱，卷起，切碎，分装。"},
+                {Locale.Korean, "냄비에 쌀과 물을 넣고 끓입니다. 김 시트에 나누어 담고 다진 게와 마요네즈를 넣고 굴려서 잘게 자른 후 나누어 담습니다."},
+                {Locale.Turkish, "Pirinç ve Suyu bir tencerede karıştırın ve pişirin. Nori yaprağına paylaştırın ve doğranmış Yengeç ve Mayonez ekleyin, Yuvarlayın, Doğrayın ve Paylaştırın."},
             };
 
             public static Dictionary<Locale, string> Nigiri => new Dictionary<Locale, string>
@@ -382,6 +433,23 @@ namespace SwimmingSushiReborn.Utilies
                 {Locale.ChineseSimplified, "如有要求，可在餐盘中加入切碎的芥末。"},
                 {Locale.Korean, "요청이 있으면 다진 와사비를 접시에 추가합니다."},
                 {Locale.Turkish, "İstenildiğinde Tabağa Kıyılmış Wasabi ekleyin."},
+            };
+            
+            public static Dictionary<Locale, string> RecipeMayonnaise => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Crack an egg, and combine with oil."},
+                {Locale.English, "Crack an egg, and combine with oil."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Casser un œuf et le mélanger à l'huile."},
+                {Locale.German, "Ein Ei aufschlagen und mit dem Öl vermengen."},
+                {Locale.Spanish, "Cascar un huevo y mezclarlo con el aceite."},
+                {Locale.Polish, "Rozbij jajko i połącz z olejem."},
+                {Locale.Russian, "Разбейте яйцо и соедините с маслом."},
+                {Locale.PortugueseBrazil, "Quebre um ovo e misture com o óleo."},
+                {Locale.Japanese, "卵を割りほぐし、油と混ぜ合わせる。"},
+                {Locale.ChineseSimplified, "打入一个鸡蛋，与油混合。"},
+                {Locale.Korean, "달걀을 깨서 기름과 섞습니다."},
+                {Locale.Turkish, "Bir yumurta kırın ve yağ ile karıştırın."},
             };
         }
 

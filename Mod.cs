@@ -21,6 +21,7 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 // https://poly.pizza/m/6Mkzj62qX2d - Crab Arm
 // https://free3d.com/3d-model/saltwater-aquarium-v1--172967.html - Fish Tank
 // https://www.freepik.com/free-vector/branch-cherry-blossom-background_3917958.htm#fromView=keyword&page=1&position=2&uuid=e7d99d62-a61f-4ce9-8178-94ea166d8f29&new_detail=true - Cherry Blossoms
+// https://uxwing.com/crab-icon/ - Crab Icon (Not Attr)
 
 namespace SwimmingSushiReborn
 {
@@ -28,7 +29,7 @@ namespace SwimmingSushiReborn
     {
         public const string MOD_GUID = "com.starfluxgames.swimmingsushireborn";
         public const string MOD_NAME = "Swimming Sushi Reborn";
-        public const string MOD_VERSION = "0.1.0";
+        public const string MOD_VERSION = "0.1.1";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 

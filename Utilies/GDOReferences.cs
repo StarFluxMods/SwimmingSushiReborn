@@ -44,9 +44,14 @@ namespace SwimmingSushiReborn.Utilies
         public static Item Pot => (Item)GDOUtils.GetExistingGDO(ItemReferences.Pot);
         public static Item Rice => (Item)GDOUtils.GetExistingGDO(ItemReferences.Rice);
         public static Item Water => (Item)GDOUtils.GetExistingGDO(ItemReferences.Water);
+        public static Item Egg => (Item)GDOUtils.GetExistingGDO(ItemReferences.Egg);
+        public static Item Oil => (Item)GDOUtils.GetExistingGDO(ItemReferences.Oil);
         public static Item Plate => (Item)GDOUtils.GetExistingGDO(ItemReferences.Plate);
         public static Item PlateDirty => (Item)GDOUtils.GetExistingGDO(ItemReferences.PlateDirty);
         public static Item CondimentSoySauce => (Item)GDOUtils.GetExistingGDO(ItemReferences.CondimentSoySauce);
+        public static Item CrabChopped => (Item)GDOUtils.GetExistingGDO(ItemReferences.CrabChopped);
+        public static Item CrabRaw => (Item)GDOUtils.GetExistingGDO(ItemReferences.CrabRaw);
+        public static Item Mayonnaise => (Item)GDOUtils.GetExistingGDO(ItemReferences.Mayonnaise);
 
         #endregion
 
@@ -77,15 +82,18 @@ namespace SwimmingSushiReborn.Utilies
 
         public static Item BurntRicePot => (Item)GDOUtils.GetCustomGameDataObject<BurntRicePot>().GameDataObject;
         public static Item ChoppedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<ChoppedSalmonRoll>().GameDataObject;
+        public static Item ChoppedCrabRoll => (Item)GDOUtils.GetCustomGameDataObject<ChoppedCrabRoll>().GameDataObject;
         public static Item CookedRice => (Item)GDOUtils.GetCustomGameDataObject<CookedRice>().GameDataObject;
         public static Item CookedRicePot => (Item)GDOUtils.GetCustomGameDataObject<CookedRicePot>().GameDataObject;
         public static Item FishKnife => (Item)GDOUtils.GetCustomGameDataObject<FishKnife>().GameDataObject;
         public static Item Ginger => (Item)GDOUtils.GetCustomGameDataObject<Ginger>().GameDataObject;
         public static Item GingerPortion => (Item)GDOUtils.GetCustomGameDataObject<GingerPortion>().GameDataObject;
         public static Item PortionedSalmonRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedSalmonRoll>().GameDataObject;
+        public static Item PortionedCrabRoll => (Item)GDOUtils.GetCustomGameDataObject<PortionedCrabRoll>().GameDataObject;
         public static Item RiceBall => (Item)GDOUtils.GetCustomGameDataObject<RiceBall>().GameDataObject;
         public static Item Roe => (Item)GDOUtils.GetCustomGameDataObject<Roe>().GameDataObject;
         public static Item RolledSalmon => (Item)GDOUtils.GetCustomGameDataObject<RolledSalmon>().GameDataObject;
+        public static Item RolledCrab => (Item)GDOUtils.GetCustomGameDataObject<RolledCrab>().GameDataObject;
         public static Item Salmon => (Item)GDOUtils.GetCustomGameDataObject<Salmon>().GameDataObject;
         public static Item SalmonFillet => (Item)GDOUtils.GetCustomGameDataObject<SalmonFillet>().GameDataObject;
         public static Item SalmonWithRoe => (Item)GDOUtils.GetCustomGameDataObject<SalmonWithRoe>().GameDataObject;
@@ -107,6 +115,7 @@ namespace SwimmingSushiReborn.Utilies
         public static ItemGroup PlatedNigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedNigiri>().GameDataObject;
         public static ItemGroup PlatedOnigiri => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedOnigiri>().GameDataObject;
         public static ItemGroup PlatedSalmonRoll => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSalmonRoll>().GameDataObject;
+        public static ItemGroup PlatedCrabRoll => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedCrabRoll>().GameDataObject;
         public static ItemGroup PlatedSashimi => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedSashimi>().GameDataObject;
         public static ItemGroup RicePot => (ItemGroup)GDOUtils.GetCustomGameDataObject<RicePot>().GameDataObject;
         public static ItemGroup RiceSheet => (ItemGroup)GDOUtils.GetCustomGameDataObject<RiceSheet>().GameDataObject;
@@ -127,6 +136,7 @@ namespace SwimmingSushiReborn.Utilies
         public static Dish DishSoySauce => (Dish)GDOUtils.GetCustomGameDataObject<DishSoySauce>().GameDataObject;
         public static Dish SideGinger => (Dish)GDOUtils.GetCustomGameDataObject<SideGinger>().GameDataObject;
         public static Dish SideWasabi => (Dish)GDOUtils.GetCustomGameDataObject<SideWasabi>().GameDataObject;
+        public static Dish RecipeMayonnaise => (Dish)GDOUtils.GetCustomGameDataObject<RecipeMayonnaise>().GameDataObject;
 
         #endregion
 
