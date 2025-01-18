@@ -29,14 +29,14 @@ namespace SwimmingSushiReborn
     {
         public const string MOD_GUID = "com.starfluxgames.swimmingsushireborn";
         public const string MOD_NAME = "Swimming Sushi Reborn";
-        public const string MOD_VERSION = "0.1.2";
+        public const string MOD_VERSION = "0.1.1";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
 
-        // internal static AchievementsManager achievementsManager;
+        internal static AchievementsManager achievementsManager;
 
         internal static readonly bool ENABLE_ADDITIONAL_LOBBY_DISHES = false;
 
@@ -72,7 +72,6 @@ namespace SwimmingSushiReborn
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault() ?? throw new MissingAssetBundleException(MOD_GUID);
             Logger = InitLogger();
 
-            /*
             achievementsManager = new AchievementsManager(MOD_GUID, MOD_NAME);
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SERVE_SALMONROLL, "Salmon Sensations", "Serve a Salmon Roll to a customer.", Bundle.LoadAsset<Texture2D>("SalmonRollIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_SPECIAL_KNIFE, "Specialty  Knife?", "Use a Fish Knife to get Roe from a Salmon", Bundle.LoadAsset<Texture2D>("SpecialityKnifeIcon")));
@@ -82,7 +81,6 @@ namespace SwimmingSushiReborn
 
             achievementsManager.Load();
             achievementsManager.Save();
-            */
 
             Bundle.LoadAllAssets<Texture2D>();
             Bundle.LoadAllAssets<Sprite>();

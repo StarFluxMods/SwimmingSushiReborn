@@ -54,7 +54,7 @@ namespace SwimmingSushiReborn.Patches
                         {
                             if (customProcessResult.NewResultID == GDOReferences.SalmonWithRoe.ID)
                             {
-                                // Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SPECIAL_KNIFE);
+                                Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_SPECIAL_KNIFE);
                             }
 
                             return customProcessResult.NewResultID;

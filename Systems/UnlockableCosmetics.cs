@@ -32,7 +32,7 @@ namespace SwimmingSushiReborn.Systems
         {
             foreach (PlayerCosmetic cosmetic in Cosmetics)
             {
-                // cosmetic.DisableInGame = !Mod.achievementsManager.GetAchievement(Mod.ACHIEVEMENT_SERVE_SALMONROLL).HasCompleted;
+                cosmetic.DisableInGame = !Mod.achievementsManager.GetAchievement(Mod.ACHIEVEMENT_SERVE_SALMONROLL).HasCompleted;
             }
         }
     }

@@ -27,7 +27,7 @@ namespace SwimmingSushiReborn.Systems.Achievements
                     if (cItem.ID == GDOReferences.BurntRicePot.ID)
                     {
                         EntityManager.AddComponent<CCompletedAchievementEntity>(Item);
-                        // Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_BURNT_RICE);
+                        Mod.achievementsManager.UnlockAchievement(Mod.ACHIEVEMENT_BURNT_RICE);
                         return;
                     }
                 }
