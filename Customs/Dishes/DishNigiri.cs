@@ -38,7 +38,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.Cook,
             GDOReferences.Chop,
-            GDOReferences.Knead
+            GDOReferences.Roll
         };
 
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("NigiriIcon").AssignMaterialsByNames();

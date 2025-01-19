@@ -13,7 +13,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
         public override CardType CardType => CardType.Default;
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
-        public override DishType Type => DishType.Base;
+        public override DishType Type => DishType.Main;
         public override int Difficulty => 3;
 
         public override List<string> StartingNameSet => new()

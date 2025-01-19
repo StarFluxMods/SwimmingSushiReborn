@@ -38,7 +38,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         {
             GDOReferences.Cook,
             GDOReferences.Chop,
-            GDOReferences.Knead
+            GDOReferences.Roll
         };
 
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("ChonkyNigiriIcon").AssignMaterialsByNames();
@@ -57,7 +57,8 @@ namespace SwimmingSushiReborn.Customs.Dishes
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>
         {
-            GDOReferences.DishSalmonRoll
+            GDOReferences.DishSalmonRoll,
+            GDOReferences.DishNigiri
         };
 
         public override bool IsAvailableAsLobbyOption => Mod.ENABLE_ADDITIONAL_LOBBY_DISHES;

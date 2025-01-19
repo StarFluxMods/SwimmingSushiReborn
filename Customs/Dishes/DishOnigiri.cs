@@ -37,7 +37,7 @@ namespace SwimmingSushiReborn.Customs.Dishes
         public override HashSet<Process> RequiredProcesses => new()
         {
             GDOReferences.Cook,
-            GDOReferences.Knead
+            GDOReferences.Roll
         };
 
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("OnigiriIcon").AssignMaterialsByNames();

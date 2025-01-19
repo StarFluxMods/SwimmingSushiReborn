@@ -17,8 +17,8 @@ namespace SwimmingSushiReborn.Customs.Items
         {
             new Item.ItemProcess
             {
-                Process = GDOReferences.Knead,
-                Duration = 2,
+                Process = GDOReferences.Roll,
+                Duration = 0.5f,
                 Result = GDOReferences.RiceBall
             }
         };
