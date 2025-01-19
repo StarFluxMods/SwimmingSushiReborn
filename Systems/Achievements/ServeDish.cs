@@ -31,11 +31,14 @@ namespace SwimmingSushiReborn.Systems.Achievements
                 foreach (Entity WaitingForItem in WaitingForItems)
                 {
                     if (!RequireBuffer(WaitingForItem, out DynamicBuffer<CWaitingForItem> buffer)) continue;
-                    foreach (var cWaitingForItem in buffer.Where(cWaitingForItem => DishAchievementKeypair.ContainsKey(cWaitingForItem.ItemID) && cWaitingForItem.Satisfied))
+                    foreach (var cWaitingForItem in buffer)
                     {
-                        EntityManager.AddComponent<CCompletedAchievementEntity>(WaitingForItem);
-                        Mod.achievementsManager.UnlockAchievement(DishAchievementKeypair[cWaitingForItem.ItemID]);
-                        return;
+                        if (DishAchievementKeypair.ContainsKey(cWaitingForItem.ItemID) && cWaitingForItem.Satisfied)
+                        {
+                            EntityManager.AddComponent<CCompletedAchievementEntity>(WaitingForItem);
+                            Mod.achievementsManager.UnlockAchievement(DishAchievementKeypair[cWaitingForItem.ItemID]);
+                            return;
+                        }
                     }
                 }
             }
